@@ -6,16 +6,7 @@ body {
 	line-height: 1.6;
     font-size: 16px;
 }
-#header-container {
-  margin: 0 auto;
-  width: 694px;
-}
-header {
-	background-color: #214555;
-}
-#head-inner {
-    padding: 25px 0;
-}
+
 h1 {
 	font-size: 26px;
 	font-weight: bold;
@@ -124,17 +115,7 @@ blockquote {
 	margin: 10px;
 }
 @media screen and (max-width: 767px) {
-#header-container {
-    margin: 0;
-	width: 100%;
-}
-header {
 
-}
-#head-inner {
-    padding: 25px 10px;
-	background-color: #214555;
-}
 .description {
 }
 #content-wrapper {

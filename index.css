@@ -101,12 +101,7 @@ aside {
 .side li a:hover {
 	text-decoration: underline;
 }
-footer {
-	font-size: 15px;
-	height: 100px;
-	clear: both;
-	text-align: center;
-}
+
 blockquote {
 	border: 1px solid #ccc;
 	padding: 5px;

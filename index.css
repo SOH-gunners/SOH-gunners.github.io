@@ -115,7 +115,7 @@ blockquote {
 
 .footer {
   	/* SVGを背景画像として指定 */
-  	background-image: url("wave.png");
+  	background-image: url("wave.svg");
   	/* 画像が繰り返し表示されないようにする */
   	background-repeat: no-repeat;
   	/* 画像が要素全体を覆うように調整 */

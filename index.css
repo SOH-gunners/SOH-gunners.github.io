@@ -64,7 +64,7 @@ body {
   --inset: 0.035em;
   position: relative;
   z-index: 1;
-  border-radius: inherit;
+  /* border-radius: inherit; */
   padding: 1em 1.5em;
   background-image: linear-gradient(
     135deg,

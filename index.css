@@ -111,6 +111,19 @@ blockquote {
 	padding: 5px;
 	margin: 10px;
 }
+
+.sphere {
+  /* 円にするために幅と高さを指定 */
+  width: 200px;
+  height: 200px;
+
+  /* 元のコード */
+  border-radius: 50%;
+  background: linear-gradient(45deg, #cb2000, #f22700);
+  box-shadow: 50px -50px 100px #7f1400,
+             -50px 50px 100px #ff3400;
+}
+
 @media screen and (max-width: 767px) {
 
 .description {

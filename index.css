@@ -109,6 +109,7 @@ blockquote {
 }
 
 .footer {
+	position: sticky;
   	/* SVGを背景画像として指定 */
   	background-image: url("wave.svg");
   	/* 画像が繰り返し表示されないようにする */

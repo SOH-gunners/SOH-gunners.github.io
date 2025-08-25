@@ -154,7 +154,7 @@ a.bt-samp78:hover { /* マウスオーバー時 */
 a.bt-samp78:active { /* クリック時 */
   -ms-transform: translateY(2px);
   -webkit-transform: translateY(2px);
-  transform: translateY(3px);
+  transform: translateY(6px);
 }
 /* 訪問済みリンクでも色が変わらないようにする */
 a.bt-samp78:visited {

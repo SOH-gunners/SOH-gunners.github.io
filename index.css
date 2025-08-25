@@ -175,7 +175,7 @@ ul {
 	padding: 0;
 }
 li {
-	list-style: disc;
+	list-style: none;
 }
 p {
 	margin: 1em 0;

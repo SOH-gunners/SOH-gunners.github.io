@@ -62,7 +62,7 @@ hr {
     height: 1px;
 }
 a {
-    color: #030202;
+    color: #030202;/* 黒 */
     font-weight: normal;
 }
 aside {
@@ -118,7 +118,7 @@ a.bt-samp78{
   text-decoration: none;
   line-height: 160px;
   text-align: center;
-  color:　#6e0404;
+  color:　#6e0404; /* 濃い赤 */
   font-size: 18px;
   text-shadow: 0px 1px 0px #240909;
   background: #e4e3e2;
@@ -155,7 +155,7 @@ a.bt-samp78:active { /* クリック時 */
 /* 訪問済みリンクでも色が変わらないようにする */
 a.bt-samp78:visited {
   color: #ce0ad1;
-}
+}/* マゼンダ */
 
 /* -------------------------------- */
 

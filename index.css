@@ -121,6 +121,54 @@ nav li {
 nav a {
     text-decoration: none; /* これで下線が消えます */
 }
+
+/* -------------ボタン作成------------- */
+a.bt-samp78{
+  display: inline-block;
+  position: relative;
+  height: 40px;
+  width: 40px;
+  padding-left:1px;
+  text-decoration: none;
+  line-height: 40px;
+  text-align: center;
+  color: #b9b4b2;
+  font-size: 25px;
+  text-shadow: 0px 1px 0px #fafafa;
+  background: #e4e3e2;
+  background: -webkit-gradient(linear, left top, left bottom, from(#eaeaea), to(#d3cecd));
+  background: -moz-linear-gradient(top,  #eaeaea,  #d3cecd);
+  background: -o-linear-gradient(top,  #eaeaea,  #d3cecd);
+  background: -ms-linear-gradient(top,  #eaeaea,  #d3cecd);
+  background: linear-gradient(top,  #eaeaea,  #d3cecd);
+  border: 1px solid #dcd9d8;
+  border-bottom: 1px solid #c1c1bd;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 0 2px 1px rgba(255,255,255,0.6), 0 0 1px #c7c5c1;
+  -moz-box-shadow: inset 0 2px 1px rgba(255,255,255,0.6), 0 0 1px #c7c5c1;
+  box-shadow: inset 0 2px 1px rgba(255,255,255,0.6), 0 0 1px #c7c5c1;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.7);
+}
+a.bt-samp78:hover { /* マウスオーバー時 */
+  background: #eaeaea;
+  background: -webkit-gradient(linear, left top, left bottom, from(#eaeaea), to(#e4e3e2));
+  background: -moz-linear-gradient(top,  #eaeaea,  #e4e3e2);
+  background: -o-linear-gradient(top,  #eaeaea,  #e4e3e2);
+  background: -ms-linear-gradient(top,  #eaeaea,  #e4e3e2);
+  background: linear-gradient(top,  #eaeaea,  #e4e3e2);
+  -webkit-box-shadow: inset 0 2px 1px rgba(0,0,0,0.1);
+  -moz-box-shadow: inset 0 2px 1px rgba(0,0,0,0.1);
+  box-shadow: inset 0 2px 1px rgba(0,0,0,0.1);
+  border-bottom:none;
+}
+a.bt-samp78:active { /* クリック時 */
+  -ms-transform: translateY(2px);
+  -webkit-transform: translateY(2px);
+  transform: translateY(2px);
+}
+
+/* -------------------------------- */
+
 .footer {
     position: sticky;
     top: 100vh;

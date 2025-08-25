@@ -187,8 +187,8 @@ a.bt-samp78:visited {
                -20px -20px 60px #ffffff;
   
   /* ▼ 見栄えを良くするための追加スタイル（任意） ▼ */
-  width: 200px;
-  height: 200px;
+  width: 1000px;
+  height: 700px;
   display: flex;
   justify-content: center;
   align-items: center;

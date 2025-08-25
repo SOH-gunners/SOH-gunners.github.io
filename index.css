@@ -248,6 +248,7 @@ nav ul {
 
 /* ボタンの間に少し余白を設ける */
 nav li {
+　list-style: none;
   margin: 0 10px; /* 左右に10pxの余白 */
 }
 

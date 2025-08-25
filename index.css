@@ -74,43 +74,31 @@ aside {
 }
 #middle-inner {
     padding: 20px 0 20px 0;
-}
-.side-title {
-    padding: 7px 16px 7px 16px;
-    background-color: #f1f1f1;
-    color: #333;
-    font-weight: bold;
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
-    border-radius: 5px;
-}
-.side {
-    margin: 0 0 10px 0;
-    padding: 2px 8px 8px 7px;
-    background-color: #fcfcfc;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-}
-.side ul {
-    margin: 0 0 0 10px;
-    padding: 0;
-}
-.side li {
-    list-style: none;
-    margin-bottom: 0.5em;
-}
-.side li a {
-    text-decoration: none;
-    color: #214555;
-}
-.side li a:hover {
-    text-decoration: none;
-}
+
 blockquote {
     border: 1px solid #ccc;
     padding: 5px;
     margin: 10px;
 }
+
+.neumorphism-box {
+    /* ▼ ここに指定のスタイルを記述 ▼ */
+    
+    border-radius: 8px;
+    background: #e0e0e0;
+    box-shadow:  5px 5px 10px #d0d0d0,
+                 -5px -5px 10px #f0f0f0;
+    
+    /* ▼ 見栄えを良くするための追加スタイル（任意） ▼ */
+    width: 500px; /* 親要素の幅いっぱいに広がる */
+    height: 300px; /* 高さはコンテンツに応じて自動調整 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    color: #232323;
+}
+
 
 /* -------------ボタン作成------------- */
 
@@ -123,7 +111,7 @@ a.bt-samp78{
     text-decoration: none;
     line-height: 40px;
     text-align: center;
-    color: #b9b4b2;
+    color: #ce0ad1;
     font-size: 25px;
     /* text-shadow: 0px 1px 0px #fafafa; */
     background: #d61313;
@@ -185,23 +173,6 @@ a.bt-samp78:visited {
     color: #fff;
 }
 
-.neumorphism-box {
-    /* ▼ ここに指定のスタイルを記述 ▼ */
-    
-    border-radius: 8px;
-    background: #e0e0e0;
-    box-shadow:  5px 5px 10px #d0d0d0,
-                 -5px -5px 10px #f0f0f0;
-    
-    /* ▼ 見栄えを良くするための追加スタイル（任意） ▼ */
-    width: 500px; /* 親要素の幅いっぱいに広がる */
-    height: 300px; /* 高さはコンテンツに応じて自動調整 */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2em;
-    color: #232323;
-}
 
 @media screen and (max-width: 767px) {
     .description {

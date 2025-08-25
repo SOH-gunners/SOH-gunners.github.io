@@ -108,6 +108,11 @@ blockquote {
     margin: 10px;
 }
 
+border-radius: 50px;
+background: #e0e0e0;
+box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+
 /* -------------ボタン作成------------- */
 a.bt-samp78{
   display: inline-block;

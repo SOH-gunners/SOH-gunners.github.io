@@ -121,11 +121,11 @@ a.bt-samp78{
   font-size: 18px;
   text-shadow: 0px 1px 0px #fafafa;
   background: #e4e3e2;
-  background: -webkit-gradient(linear, left top, left bottom, from(#eaeaea), to(#d3cecd));
-  background: -moz-linear-gradient(top,  #eaeaea,  #d3cecd);
-  background: -o-linear-gradient(top,  #eaeaea,  #d3cecd);
-  background: -ms-linear-gradient(top,  #eaeaea,  #d3cecd);
-  background: linear-gradient(top,  #eaeaea,  #d3cecd);
+  background: -webkit-gradient(linear, left top, left bottom, from(#eaeaea), to(#f54545));
+  background: -moz-linear-gradient(top,  #eaeaea,  #f54545);
+  background: -o-linear-gradient(top,  #eaeaea,  #f54545);
+  background: -ms-linear-gradient(top,  #eaeaea,  #f54545);
+  background: linear-gradient(top,  #eaeaea,  #f54545);
   border: 1px solid #dcd9d8;
   border-bottom: 1px solid #c1c1bd;
   border-radius: 50%;
@@ -136,11 +136,11 @@ a.bt-samp78{
 }
 a.bt-samp78:hover { /* マウスオーバー時 */
   background:　#de9999;
-  background: -webkit-gradient(linear, left top, left bottom, from(#eaeaea), to(#e4e3e2));
-  background: -moz-linear-gradient(top,  #eaeaea,  #e4e3e2);
-  background: -o-linear-gradient(top,  #eaeaea,  #e4e3e2);
-  background: -ms-linear-gradient(top,  #eaeaea,  #e4e3e2);
-  background: linear-gradient(top,  #eaeaea,  #e4e3e2);
+  background: -webkit-gradient(linear, left top, left bottom, from(#eaeaea), to(#de9999));
+  background: -moz-linear-gradient(top,  #eaeaea,  #de9999);
+  background: -o-linear-gradient(top,  #eaeaea,  #de9999);
+  background: -ms-linear-gradient(top,  #eaeaea,  #de9999);
+  background: linear-gradient(top,  #eaeaea,  #de9999);
   -webkit-box-shadow: inset 0 2px 1px rgba(0,0,0,0.1);
   -moz-box-shadow: inset 0 2px 1px rgba(0,0,0,0.1);
   box-shadow: inset 0 2px 1px rgba(0,0,0,0.1);
@@ -149,7 +149,7 @@ a.bt-samp78:hover { /* マウスオーバー時 */
 a.bt-samp78:active { /* クリック時 */
   -ms-transform: translateY(2px);
   -webkit-transform: translateY(2px);
-  transform: translateY(5px);
+  transform: translateY(3px);
 }
 
 /* -------------------------------- */

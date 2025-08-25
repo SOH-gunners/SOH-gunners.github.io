@@ -198,10 +198,10 @@ a.bt-samp78:visited {
                -5px -5px 10px #f0f0f0;
   
   /* ▼ 見栄えを良くするための追加スタイル（任意） ▼ */
-  width: 100%; /* 親要素の幅いっぱいに広がる */
+  width: 60%; /* 親要素の幅いっぱいに広がる */
   max-width: 1000px; /* ただし、最大幅は1000pxまで */
   height: auto; /* 高さはコンテンツに応じて自動調整 */
-  min-height: 500px; /* 最小の高さは500px確保する */
+  min-height: 300px; /* 最小の高さは500px確保する */
   margin-left: 0; /* ← 固定値のmarginはリセット */
   display: flex;
   justify-content: center;

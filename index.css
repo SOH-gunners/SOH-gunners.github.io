@@ -181,10 +181,10 @@ a.bt-samp78:visited {
 
 .neumorphism-box {
   /* ▼ ここに指定のスタイルを記述 ▼ */
-  border-radius: 50px;
-  background: #e0e0e0;
-  box-shadow:  20px 20px 60px #bebebe,
-               -20px -20px 60px #ffffff;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow:  5px 5px 10px #d0d0d0,
+               -5px -5px 10px #f0f0f0;
   
   /* ▼ 見栄えを良くするための追加スタイル（任意） ▼ */
   width: 1000px;

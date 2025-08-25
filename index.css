@@ -238,6 +238,24 @@ blockquote {
 	margin: 10px;
 }
 
+/* ナビゲーション全体を横並び・中央揃えにする */
+nav ul {
+  display: flex; /* 要素を横並びにする */
+  justify-content: center; /* 中央に寄せる */
+  padding: 0; /* デフォルトの余白を削除 */
+  list-style: none; /* リストの黒丸を削除 */
+}
+
+/* ボタンの間に少し余白を設ける */
+nav li {
+  margin: 0 10px; /* 左右に10pxの余白 */
+}
+
+/* ナビゲーション内のリンクの下線を消す */
+nav a {
+  text-decoration: none; /* これで下線が消えます */
+}
+
 .footer {
 	position: sticky;
 	top: 100vh;

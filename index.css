@@ -112,11 +112,11 @@ blockquote {
 a.bt-samp78{
   display: inline-block;
   position: relative;
-  height: 160px;
-  width: 160px;
+  height: 120px;
+  width: 120px;
   padding-left:1px;
   text-decoration: none;
-  line-height: 160px;
+  line-height: 120px;
   text-align: center;
   color:　#6e0404; /* 濃い赤 */
   font-size: 18px;

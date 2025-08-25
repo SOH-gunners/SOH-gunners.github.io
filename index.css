@@ -179,6 +179,7 @@ nav ul {
 
 /* ボタンの間に少し余白を設ける */
 nav li {
+	list-style: none; /* liタグに直接指定して黒丸を消す */
 	margin: 0 10px; /* 左右に10pxの余白 */
 }
 

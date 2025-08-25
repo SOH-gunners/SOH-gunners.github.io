@@ -152,6 +152,10 @@ a.bt-samp78:active { /* クリック時 */
   -webkit-transform: translateY(2px);
   transform: translateY(3px);
 }
+/* 訪問済みリンクでも色が変わらないようにする */
+a.bt-samp78:visited {
+  color: #ab0f0f;
+}
 
 /* -------------------------------- */
 

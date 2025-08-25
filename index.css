@@ -121,11 +121,11 @@ a.bt-samp78{
   font-size: 18px;
   text-shadow: 0px 1px 0px #fafafa;
   background: #e4e3e2;
-  background: -webkit-gradient(linear, left top, left bottom, from(#eaeaea), to(#d61313));
-  background: -moz-linear-gradient(top,  #eaeaea,  #d61313);
-  background: -o-linear-gradient(top,  #eaeaea,  #d61313);
-  background: -ms-linear-gradient(top,  #eaeaea,  #d61313);
-  background: linear-gradient(top,  #eaeaea,  #d61313);
+  background: -webkit-gradient(linear, left top, left bottom, from(#f5a4a4), to(#d61313));
+  background: -moz-linear-gradient(top,  #f5a4a4,  #d61313);
+  background: -o-linear-gradient(top,  #f5a4a4,  #d61313);
+  background: -ms-linear-gradient(top,  #f5a4a4,  #d61313);
+  background: linear-gradient(top,  #f5a4a4,  #d61313);
   border: 1px solid #dcd9d8;
   border-bottom: 1px solid #c1c1bd;
   border-radius: 50%;

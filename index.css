@@ -34,13 +34,11 @@ h2 {
 }
 
 #content-wrapper {
-  width: 90%; /* 画面幅の90%を基準にする */
-  max-width: 694px; /* ただし、最大でも694pxまでしか広がらないようにする */
   margin: 0 auto;
+  width: 694px;
 }
 
 main {
-  position: relative; /* ボタンを配置する基準点にする */
   color: #333;
 }
 #inner {
@@ -117,11 +115,9 @@ blockquote {
 /* -------------ボタン作成------------- */
 a.bt-samp78{
   display: inline-block;
-  position: absolute; /* 親要素(main)を基準に絶対配置 */
-  bottom: 20px;       /* 親要素の下から20pxの位置 */
-  right: 20px;        /* 親要素の右から20pxの位置 */
+  position: relative;
   height: 120px;
-  width: 120px;
+  width: 120px;
   padding-left:1px;
   text-decoration: none;
   line-height: 120px;
@@ -198,13 +194,8 @@ a.bt-samp78:visited {
                -5px -5px 10px #f0f0f0;
   
   /* ▼ 見栄えを良くするための追加スタイル（任意） ▼ */
-  width: 70%; /* 親要素の幅いっぱいに広がる */
-  max-width: 1000px; /* ただし、最大幅は1000pxまで */
-  min-width: 700px; /* ただし、最大幅は1000pxまで */
-  height: auto; /* 高さはコンテンツに応じて自動調整 */
-  min-height: 500px; /* 最小の高さは500px確保する */
-  max-height: 800px; /* 最小の高さは500px確保する */
-  margin-left: 0; /* ← 固定値のmarginはリセット */
+  width: 1000px; /* 親要素の幅いっぱいに広がる */
+  height: 800px; /* 高さはコンテンツに応じて自動調整 */
   display: flex;
   justify-content: center;
   align-items: center;

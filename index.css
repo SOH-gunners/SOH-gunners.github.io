@@ -192,8 +192,8 @@ a.bt-samp78:visited {
                -5px -5px 10px #f0f0f0;
   
   /* ▼ 見栄えを良くするための追加スタイル（任意） ▼ */
-  width: 200px; /* 親要素の幅いっぱいに広がる */
-  height: 80px; /* 高さはコンテンツに応じて自動調整 */
+  width: 500px; /* 親要素の幅いっぱいに広がる */
+  height: 300px; /* 高さはコンテンツに応じて自動調整 */
   display: flex;
   justify-content: center;
   align-items: center;

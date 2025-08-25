@@ -188,7 +188,7 @@ a.bt-samp78:visited {
 .neumorphism-box {
   /* ▼ ここに指定のスタイルを記述 ▼ */
   margin-top: 50px;  /* 上に50pxの余白を追加（下に移動） */
-  margin-left: -300px; /* 左に30pxの余白を追加（右に移動） */
+  margin-left: -200px; /* 左に30pxの余白を追加（右に移動） */
   
   border-radius: 8px;
   background: #e0e0e0;
@@ -196,8 +196,8 @@ a.bt-samp78:visited {
                -5px -5px 10px #f0f0f0;
   
   /* ▼ 見栄えを良くするための追加スタイル（任意） ▼ */
-  width: 1200px;
-  height: 1000px;
+  width: 1000px;
+  height: 800px;
   display: flex;
   justify-content: center;
   align-items: center;

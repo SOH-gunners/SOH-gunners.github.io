@@ -118,7 +118,7 @@ a.bt-samp78{
   text-decoration: none;
   line-height: 160px;
   text-align: center;
-  color:　#ab0f0f;
+  color:　#6e0404;
   font-size: 18px;
   text-shadow: 0px 1px 0px #240909;
   background: #e4e3e2;
@@ -154,7 +154,7 @@ a.bt-samp78:active { /* クリック時 */
 }
 /* 訪問済みリンクでも色が変わらないようにする */
 a.bt-samp78:visited {
-  color: #ab0f0f;
+  color: #6e0404;
 }
 
 /* -------------------------------- */

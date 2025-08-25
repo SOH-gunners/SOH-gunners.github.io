@@ -5,138 +5,68 @@ body {
 	padding: 0;
 	font-family: "游ゴシック Medium", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
 	line-height: 1.6;
-    font-size: 16px;
+	font-size: 16px;
 }
 
-/* From Uiverse.io by FColombati */ 
-.button {
-  all: unset;
-  cursor: pointer;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  position: relative;
-  border-radius: 100em;
-  background-color: rgba(0, 0, 0, 0.75);
-  box-shadow:
-    -0.15em -0.15em 0.15em -0.075em rgba(5, 5, 5, 0.25),
-    0.0375em 0.0375em 0.0675em 0 rgba(5, 5, 5, 0.1);
+/* ▼▼▼ ボタンのスタイル ▼▼▼ */
+
+/* aタグをボタン本体としてスタイリング */
+a.button {
+	all: unset; /* ブラウザのデフォルトスタイルをリセット */
+	cursor: pointer;
+	display: inline-block; /* text-decorationの影響範囲を限定 */
+	position: relative;
+	border-radius: 100em;
+	padding: 1em 1.5em;
+	font-family: "Inter", sans-serif;
+	font-weight: 500;
+	letter-spacing: -0.05em;
+	color: rgba(0, 0, 0, 0); /* 文字色を透明にする */
+	background-image: linear-gradient(
+		135deg,
+		rgba(230, 230, 230, 1),
+		rgba(180, 180, 180, 1)
+	);
+	box-shadow: -0.1em -0.1em 0.1em rgba(0, 0, 0, 0.15) inset, 0.1em 0.1em 0.2em rgba(255, 255, 255, 0.5) inset;
+	transition: transform 250ms ease;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
 }
 
-.button::after {
-  content: "";
-  position: absolute;
-  z-index: 0;
-  width: calc(100% + 0.3em);
-  height: calc(100% + 0.3em);
-  top: -0.15em;
-  left: -0.15em;
-  border-radius: inherit;
-  background: linear-gradient(
-    -135deg,
-    rgba(5, 5, 5, 0.5),
-    transparent 20%,
-    transparent 100%
-  );
-  filter: blur(0.0125em);
-  opacity: 0.25;
-  mix-blend-mode: multiply;
+/* グラデーションテキストを作成 */
+a.button::before {
+	content: attr(href); /* 擬似的にテキストを生成（ここでは使わない） */
+	content: ''; /* 空にする */
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-image: linear-gradient(
+		135deg,
+		rgba(25, 25, 25, 1),
+		rgba(75, 75, 75, 1)
+	);
+	-webkit-background-clip: text;
+	background-clip: text;
+	font: inherit; /* 親のフォントスタイルを継承 */
+	line-height: 3; /* text-align: centerの代わり */
 }
 
-.button .button-outer {
-  position: relative;
-  z-index: 1;
-  border-radius: inherit;
-  transition: box-shadow 300ms ease;
-  will-change: box-shadow;
-  box-shadow:
-    0 0.05em 0.05em -0.01em rgba(5, 5, 5, 1),
-    0 0.01em 0.01em -0.01em rgba(5, 5, 5, 0.5),
-    0.15em 0.3em 0.1em -0.01em rgba(5, 5, 5, 0.25);
+/* ホバー時のアニメーション */
+a.button:hover {
+	transform: scale(0.975);
 }
 
-.button:hover .button-outer {
-  box-shadow:
-    0 0 0 0 rgba(5, 5, 5, 1),
-    0 0 0 0 rgba(5, 5, 5, 0.5),
-    0 0 0 0 rgba(5, 5, 5, 0.25);
+/* クリック時のアニメーション */
+a.button:active {
+	transform: scale(0.95);
+	box-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.25) inset;
 }
 
-.button-inner {
-  --inset: 0.035em;
-  position: relative;
-  z-index: 1;
-  border-radius: inherit;
-  padding: 1em 1.5em;
-  background-image: linear-gradient(
-    135deg,
-    rgba(230, 230, 230, 1),
-    rgba(180, 180, 180, 1)
-  );
-  transition:
-    box-shadow 300ms ease,
-    clip-path 250ms ease,
-    background-image 250ms ease,
-    transform 250ms ease;
-  will-change: box-shadow, clip-path, background-image, transform;
-  overflow: clip;
-  clip-path: inset(0 0 0 0 round 100em);
-  box-shadow:
-        /* 1 */
-    0 0 0 0 inset rgba(5, 5, 5, 0.1),
-    /* 2 */ -0.05em -0.05em 0.05em 0 inset rgba(5, 5, 5, 0.25),
-    /* 3 */ 0 0 0 0 inset rgba(5, 5, 5, 0.1),
-    /* 4 */ 0 0 0.05em 0.2em inset rgba(255, 255, 255, 0.25),
-    /* 5 */ 0.025em 0.05em 0.1em 0 inset rgba(255, 255, 255, 1),
-    /* 6 */ 0.12em 0.12em 0.12em inset rgba(255, 255, 255, 0.25),
-    /* 7 */ -0.075em -0.25em 0.25em 0.1em inset rgba(5, 5, 5, 0.25);
-}
 
-.button:hover .button-inner {
-  clip-path: inset(
-    clamp(1px, 0.0625em, 2px) clamp(1px, 0.0625em, 2px)
-      clamp(1px, 0.0625em, 2px) clamp(1px, 0.0625em, 2px) round 100em
-  );
-  box-shadow:
-        /* 1 */
-    0.1em 0.15em 0.05em 0 inset rgba(5, 5, 5, 0.75),
-    /* 2 */ -0.025em -0.03em 0.05em 0.025em inset rgba(5, 5, 5, 0.5),
-    /* 3 */ 0.25em 0.25em 0.2em 0 inset rgba(5, 5, 5, 0.5),
-    /* 4 */ 0 0 0.05em 0.5em inset rgba(255, 255, 255, 0.15),
-    /* 5 */ 0 0 0 0 inset rgba(255, 255, 255, 1),
-    /* 6 */ 0.12em 0.12em 0.12em inset rgba(255, 255, 255, 0.25),
-    /* 7 */ -0.075em -0.12em 0.2em 0.1em inset rgba(5, 5, 5, 0.25);
-}
-
-.button .button-inner span {
-  position: relative;
-  z-index: 4;
-  font-family: "Inter", sans-serif;
-  letter-spacing: -0.05em;
-  font-weight: 500;
-  color: rgba(0, 0, 0, 0);
-  background-image: linear-gradient(
-    135deg,
-    rgba(25, 25, 25, 1),
-    rgba(75, 75, 75, 1)
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  transition: transform 250ms ease;
-  display: block;
-  will-change: transform;
-  text-shadow: rgba(0, 0, 0, 0.1) 0 0 0.1em;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.button:hover .button-inner span {
-  transform: scale(0.975);
-}
-
-.button:active .button-inner {
-  transform: scale(0.975);
-}
+/* ▲▲▲ ボタンのスタイル ▲▲▲ */
 
 h1 {
 	font-size: 26px;
@@ -162,8 +92,10 @@ h2 {
 	padding: 4px 0;
 	border-bottom: 1px solid #999;
 }
-#content-wrapper {margin: 0 auto;
-    width: 694px;}
+#content-wrapper {
+	margin: 0 auto;
+	width: 694px;
+}
 main {
 	color: #333;
 }
@@ -195,7 +127,6 @@ a {
 	font-weight: normal;
 }
 aside {
-
 }
 #middle-inner {
 	padding: 20px 0 20px 0;
@@ -240,74 +171,66 @@ blockquote {
 
 /* ナビゲーション全体を横並び・中央揃えにする */
 nav ul {
-  display: flex; /* 要素を横並びにする */
-  justify-content: center; /* 中央に寄せる */
-  padding: 0; /* デフォルトの余白を削除 */
-  list-style: none; /* リストの黒丸を削除 */
+	display: flex; /* 要素を横並びにする */
+	justify-content: center; /* 中央に寄せる */
+	padding: 0; /* デフォルトの余白を削除 */
+	list-style: none; /* リストの黒丸を削除 */
 }
 
 /* ボタンの間に少し余白を設ける */
 nav li {
-  margin: 0 10px; /* 左右に10pxの余白 */
+	margin: 0 10px; /* 左右に10pxの余白 */
 }
 
 /* ナビゲーション内のリンクの下線を消す */
 nav a {
-  text-decoration: none; /* これで下線が消えます */
+	text-decoration: none; /* これで下線が消えます */
 }
 
 .footer {
 	position: sticky;
 	top: 100vh;
-	
-  	/* SVGを背景画像として指定 */
-  	background-image: url("wave.svg");
-  	/* 画像が繰り返し表示されないようにする */
-  	background-repeat: no-repeat;
-  	/* 画像が要素全体を覆うように調整
-  	background-size: cover;*/
-  	/* 高さをつけないと背景が見えないので注意 */
-  	height: 320px; 
-
+	background-image: url("wave.svg");
+	background-repeat: no-repeat;
+	/* background-size: cover; */
+	height: 320px;
 	width: 100%;
-
 	font-size: 15px;
 	clear: both;
 	text-align: center;
 	color: #fff;
 }
 
-	
 @media screen and (max-width: 767px) {
-
-.description {
-}
-#content-wrapper {
-margin: 0;
-	width: 100%;}
-main {
-width: 100%;
-	color: #333;
-}
-#inner {
-	padding: 20px 10px 0 10px;
-}
-aside {
-width: 100%;
-}
-#middle-inner {
-	padding: 10px 10px 20px 10px;
-}
-h1 {
-	font-size: 20px;
-}
-h2 {
-	font-size: 18px;
-}
-h3 {
-	font-size: 16px;
-}
-h4 {
-	font-size: 14px;
-}
+	.description {
+	}
+	#content-wrapper {
+		margin: 0;
+		width: 100%;
+	}
+	main {
+		width: 100%;
+		color: #333;
+	}
+	#inner {
+		padding: 20px 10px 0 10px;
+	}
+	aside {
+		width: 100%;
+	}
+	#middle-inner {
+		padding: 10px 10px 20px 10px;
+	}
+	h1 {
+		font-size: 20px;
+	}
+	h2 {
+		font-size: 18px;
+	}
+	h3 {
+		font-size: 16px;
+	}
+	h4 {
+		font-size: 14px;
+	}
 }

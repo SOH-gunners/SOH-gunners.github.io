@@ -135,7 +135,7 @@ a.bt-samp78{
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.7);
 }
 a.bt-samp78:hover { /* マウスオーバー時 */
-　background: #e4e3e2;
+  background: #e4e3e2;
   background: -webkit-gradient(linear, left top, left bottom, from(#f5a4a4), to(#d61313));
   background: -moz-linear-gradient(top,  #f5a4a4,  #d61313);
   background: -o-linear-gradient(top,  #f5a4a4,  #d61313);

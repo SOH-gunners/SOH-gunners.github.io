@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-  background-color: #e0e0e0; /* ← ここで背景色を指定 */
+  background-color: #faf7f7; /* ← ここで背景色を指定 */
 }
 
 h1 {
@@ -116,9 +116,6 @@ blockquote {
 a.bt-samp78{
   display: inline-block;
   position: relative;
-
-  top: -400px;
-  left: 650px;
   
   height: 120px;
   width: 120px;
@@ -188,8 +185,6 @@ a.bt-samp78:visited {
 
 .neumorphism-box {
   /* ▼ ここに指定のスタイルを記述 ▼ */
-  margin-top: -50px;  /* 上に50pxの余白を追加（下に移動） */
-  margin-left: -200px; /* 左に30pxの余白を追加（右に移動） */
   
   border-radius: 8px;
   background: #e0e0e0;
@@ -197,8 +192,8 @@ a.bt-samp78:visited {
                -5px -5px 10px #f0f0f0;
   
   /* ▼ 見栄えを良くするための追加スタイル（任意） ▼ */
-  width: 1000px; /* 親要素の幅いっぱいに広がる */
-  height: 800px; /* 高さはコンテンツに応じて自動調整 */
+  width: 200px; /* 親要素の幅いっぱいに広がる */
+  height: 80px; /* 高さはコンテンツに応じて自動調整 */
   display: flex;
   justify-content: center;
   align-items: center;

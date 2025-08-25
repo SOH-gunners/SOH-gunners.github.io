@@ -61,501 +61,272 @@ body {
 }
 
 .button-inner {
-
-  --inset: 0.035em;
-
-  position: relative;
-
-  z-index: 1;
-
-  border-radius: inherit;
-
-  padding: 1em 1.5em;
-
-  background-image: linear-gradient(
-
-    135deg,
-
-    rgba(230, 230, 230, 1),
-
-    rgba(180, 180, 180, 1)
-
-  );
-
-  transition:
-
-    box-shadow 300ms ease,
-
-    clip-path 250ms ease,
-
-    background-image 250ms ease,
-
-    transform 250ms ease;
-
-  will-change: box-shadow, clip-path, background-image, transform;
-
-  overflow: clip;
-
-  clip-path: inset(0 0 0 0 round 100em);
-
-  box-shadow:
-
-        /* 1 */
-
-    0 0 0 0 inset rgba(5, 5, 5, 0.1),
-
-    /* 2 */ -0.05em -0.05em 0.05em 0 inset rgba(5, 5, 5, 0.25),
-
-    /* 3 */ 0 0 0 0 inset rgba(5, 5, 5, 0.1),
-
-    /* 4 */ 0 0 0.05em 0.2em inset rgba(255, 255, 255, 0.25),
-
-    /* 5 */ 0.025em 0.05em 0.1em 0 inset rgba(255, 255, 255, 1),
-
-    /* 6 */ 0.12em 0.12em 0.12em inset rgba(255, 255, 255, 0.25),
-
-    /* 7 */ -0.075em -0.25em 0.25em 0.1em inset rgba(5, 5, 5, 0.25);
-
+    --inset: 0.035em;
+    position: relative;
+    z-index: 1;
+    border-radius: inherit;
+    padding: 1em 1.5em;
+    background-image: linear-gradient(
+        135deg,
+        rgba(230, 230, 230, 1),
+        rgba(180, 180, 180, 1)
+    );
+    transition:
+        box-shadow 300ms ease,
+        clip-path 250ms ease,
+        background-image 250ms ease,
+        transform 250ms ease;
+    will-change: box-shadow, clip-path, background-image, transform;
+    overflow: clip;
+    clip-path: inset(0 0 0 0 round 100em);
+    box-shadow:
+        /* 1 */
+        0 0 0 0 inset rgba(5, 5, 5, 0.1),
+        /* 2 */
+        -0.05em -0.05em 0.05em 0 inset rgba(5, 5, 5, 0.25),
+        /* 3 */
+        0 0 0 0 inset rgba(5, 5, 5, 0.1),
+        /* 4 */
+        0 0 0.05em 0.2em inset rgba(255, 255, 255, 0.25),
+        /* 5 */
+        0.025em 0.05em 0.1em 0 inset rgba(255, 255, 255, 1),
+        /* 6 */
+        0.12em 0.12em 0.12em inset rgba(255, 255, 255, 0.25),
+        /* 7 */
+        -0.075em -0.25em 0.25em 0.1em inset rgba(5, 5, 5, 0.25);
 }
-
-
-
 .button:hover .button-inner {
-
-  clip-path: inset(
-
-    clamp(1px, 0.0625em, 2px) clamp(1px, 0.0625em, 2px)
-
-      clamp(1px, 0.0625em, 2px) clamp(1px, 0.0625em, 2px) round 100em
-
-  );
-
-  box-shadow:
-
-        /* 1 */
-
-    0.1em 0.15em 0.05em 0 inset rgba(5, 5, 5, 0.75),
-
-    /* 2 */ -0.025em -0.03em 0.05em 0.025em inset rgba(5, 5, 5, 0.5),
-
-    /* 3 */ 0.25em 0.25em 0.2em 0 inset rgba(5, 5, 5, 0.5),
-
-    /* 4 */ 0 0 0.05em 0.5em inset rgba(255, 255, 255, 0.15),
-
-    /* 5 */ 0 0 0 0 inset rgba(255, 255, 255, 1),
-
-    /* 6 */ 0.12em 0.12em 0.12em inset rgba(255, 255, 255, 0.25),
-
-    /* 7 */ -0.075em -0.12em 0.2em 0.1em inset rgba(5, 5, 5, 0.25);
-
+    clip-path: inset(
+        clamp(1px, 0.0625em, 2px) clamp(1px, 0.0625em, 2px)
+        clamp(1px, 0.0625em, 2px) clamp(1px, 0.0625em, 2px) round 100em
+    );
+    box-shadow:
+        /* 1 */
+        0.1em 0.15em 0.05em 0 inset rgba(5, 5, 5, 0.75),
+        /* 2 */
+        -0.025em -0.03em 0.05em 0.025em inset rgba(5, 5, 5, 0.5),
+        /* 3 */
+        0.25em 0.25em 0.2em 0 inset rgba(5, 5, 5, 0.5),
+        /* 4 */
+        0 0 0.05em 0.5em inset rgba(255, 255, 255, 0.15),
+        /* 5 */
+        0 0 0 0 inset rgba(255, 255, 255, 1),
+        /* 6 */
+        0.12em 0.12em 0.12em inset rgba(255, 255, 255, 0.25),
+        /* 7 */
+        -0.075em -0.12em 0.2em 0.1em inset rgba(5, 5, 5, 0.25);
 }
-
-
 
 .button .button-inner span {
-
-  position: relative;
-
-  z-index: 4;
-
-  font-family: "Inter", sans-serif;
-
-  letter-spacing: -0.05em;
-
-  font-weight: 500;
-
-  color: rgba(0, 0, 0, 0);
-
-  background-image: linear-gradient(
-
-    135deg,
-
-    rgba(25, 25, 25, 1),
-
-    rgba(75, 75, 75, 1)
-
-  );
-
-  -webkit-background-clip: text;
-
-  background-clip: text;
-
-  transition: transform 250ms ease;
-
-  display: block;
-
-  will-change: transform;
-
-  text-shadow: rgba(0, 0, 0, 0.1) 0 0 0.1em;
-
-  -webkit-user-select: none;
-
-  -moz-user-select: none;
-
-  -ms-user-select: none;
-
-  user-select: none;
-
+    position: relative;
+    z-index: 4;
+    font-family: "Inter", sans-serif;
+    letter-spacing: -0.05em;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(
+        135deg,
+        rgba(25, 25, 25, 1),
+        rgba(75, 75, 75, 1)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: transform 250ms ease;
+    display: block;
+    will-change: transform;
+    text-shadow: rgba(0, 0, 0, 0.1) 0 0 0.1em;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
-
-
 
 .button:hover .button-inner span {
-
-  transform: scale(0.975);
-
+    transform: scale(0.975);
 }
-
-
 
 .button:active .button-inner {
-
-  transform: scale(0.975);
-
+    transform: scale(0.975);
 }
 
-
-
 h1 {
-
-font-size: 26px;
-
-font-weight: bold;
-
-padding: 10px 0 0 0;
-
-margin: 0;
-
+    font-size: 26px;
+    font-weight: bold;
+    padding: 10px 0 0 0;
+    margin: 0;
 }
 
 h1 a {
-
-font-weight: bold;
-
-text-decoration: none;
-
+    font-weight: bold;
+    text-decoration: none;
 }
 
 h1 a:hover {
-
-text-decoration: none;
-
+    text-decoration: none;
 }
 
 .description {
-
-line-height: 1.2;
-
-color: #f3f2eb;
-
-margin: 0.5em 0 1em 0;
-
+    line-height: 1.2;
+    color: #f3f2eb;
+    margin: 0.5em 0 1em 0;
 }
 
 h2 {
-
-font-size: 22px;
-
-margin: 0;
-
-padding: 4px 0;
-
-border-bottom: 1px solid #999;
-
-}
-
-#content-wrapper {margin: 0 auto;
-
-    width: 694px;}
-
-main {
-
-color: #333;
-
-}
-
-#inner {
-
-padding: 20px 0 0 0;
-
-}
-
-ul {
-
-margin: 0 0 0 1em;
-
-padding: 0;
-
-}
-
-li {
-
-list-style: disc;
-
-}
-
-p {
-
-margin: 1em 0;
-
-}
-
-img {
-
-max-width: 100%;
-
-height: auto;
-
-border: 0;
-
-}
-
-hr {
-
-border-width: 1px 0 0 0;
-
-border-style: solid;
-
-border-color: #ccc;
-
-height: 1px;
-
-}
-
-a {
-
-font-weight: normal;
-
-}
-
-aside {
-
-
-
-}
-
-#middle-inner {
-
-padding: 20px 0 20px 0;
-
-}
-
-.side-title {
-
-padding: 7px 16px 7px 16px;
-
-background-color: #f1f1f1;
-
-color: #333;
-
-font-weight: bold;
-
-border: 1px solid #ccc;
-
-margin-bottom: 10px;
-
-border-radius: 5px;
-
-}
-
-.side {
-
-margin: 0 0 10px 0;
-
-padding: 2px 8px 8px 7px;
-
-background-color: #fcfcfc;
-
-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-
-border-radius: 5px;
-
-}
-
-.side ul {
-
-margin: 0 0 0 10px;
-
-padding: 0;
-
-}
-
-.side li {
-
-list-style: none;
-
-margin-bottom: 0.5em;
-
-}
-
-.side li a {
-
-text-decoration: none;
-
-color: #214555;
-
-}
-
-.side li a:hover {
-
-text-decoration: none;
-
-}
-
-
-
-blockquote {
-
-border: 1px solid #ccc;
-
-padding: 5px;
-
-margin: 10px;
-
-}
-
-
-
-/* ナビゲーション全体を横並び・中央揃えにする */
-
-nav ul {
-
-  display: flex; /* 要素を横並びにする */
-
-  justify-content: center; /* 中央に寄せる */
-
-  padding: 0; /* デフォルトの余白を削除 */
-
-  list-style: none; /* リストの黒丸を削除 */
-
-}
-
-
-
-/* ボタンの間に少し余白を設ける */
-
-nav li {
-
-  margin: 0 10px; /* 左右に10pxの余白 */
-
-}
-
-
-
-/* ナビゲーション内のリンクの下線を消す */
-
-nav a {
-
-  text-decoration: none; /* これで下線が消えます */
-
-}
-
-
-
-.footer {
-
-position: sticky;
-
-top: 100vh;
-
-
-  /* SVGを背景画像として指定 */
-
-  background-image: url("wave.svg");
-
-  /* 画像が繰り返し表示されないようにする */
-
-  background-repeat: no-repeat;
-
-  /* 画像が要素全体を覆うように調整
-
-  background-size: cover;*/
-
-  /* 高さをつけないと背景が見えないので注意 */
-
-  height: 320px; 
-
-
-
-width: 100%;
-
-
-
-font-size: 15px;
-
-clear: both;
-
-text-align: center;
-
-color: #fff;
-
-}
-
-
-
-
-@media screen and (max-width: 767px) {
-
-
-
-.description {
-
+    font-size: 22px;
+    margin: 0;
+    padding: 4px 0;
+    border-bottom: 1px solid #999;
 }
 
 #content-wrapper {
-
-margin: 0;
-
-width: 100%;}
+    margin: 0 auto;
+    width: 694px;
+}
 
 main {
-
-width: 100%;
-
-color: #333;
-
+    color: #333;
 }
-
 #inner {
-
-padding: 20px 10px 0 10px;
-
+    padding: 20px 0 0 0;
 }
-
+ul {
+    margin: 0 0 0 1em;
+    padding: 0;
+}
+li {
+    list-style: disc;
+}
+p {
+    margin: 1em 0;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+hr {
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    border-color: #ccc;
+    height: 1px;
+}
+a {
+    font-weight: normal;
+}
 aside {
-
-width: 100%;
-
+    
 }
-
 #middle-inner {
+    padding: 20px 0 20px 0;
+}
+.side-title {
+    padding: 7px 16px 7px 16px;
+    background-color: #f1f1f1;
+    color: #333;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.side {
+    margin: 0 0 10px 0;
+    padding: 2px 8px 8px 7px;
+    background-color: #fcfcfc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.side ul {
+    margin: 0 0 0 10px;
+    padding: 0;
+}
+.side li {
+    list-style: none;
+    margin-bottom: 0.5em;
+}
+.side li a {
+    text-decoration: none;
+    color: #214555;
+}
+.side li a:hover {
+    text-decoration: none;
+}
+blockquote {
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 10px;
+}
+/* ナビゲーション全体を横並び・中央揃えにする */
+nav ul {
+    display: flex; /* 要素を横並びにする */
+    justify-content: center; /* 中央に寄せる */
+    padding: 0; /* デフォルトの余白を削除 */
+    list-style: none; /* リストの黒丸を削除 */
+}
+/* ボタンの間に少し余白を設ける */
+nav li {
+    margin: 0 10px; /* 左右に10pxの余白 */
+}
+/* ナビゲーション内のリンクの下線を消す */
+nav a {
+    text-decoration: none; /* これで下線が消えます */
+}
+.footer {
+    position: sticky;
+    top: 100vh;
+    /* SVGを背景画像として指定 */
+    background-image: url("wave.svg");
+    /* 画像が繰り返し表示されないようにする */
+    background-repeat: no-repeat;
+    /* 画像が要素全体を覆うように調整
+    background-size: cover;*/
+    /* 高さをつけないと背景が見えないので注意 */
+    height: 320px;
+    width: 100%;
+    
+    font-size: 15px;
+    clear: both;
 
-padding: 10px 10px 20px 10px;
-
+    ext-align: center;
+    color: #fff;
 }
 
-h1 {
-
-font-size: 20px;
-
-}
-
-h2 {
-
-font-size: 18px;
-
-}
-
-h3 {
-
-font-size: 16px;
-
-}
-
-h4 {
-
-font-size: 14px;
-
-}
-
+@media screen and (max-width: 767px) {
+    .description {
+        
+    }
+    
+    #content-wrapper {
+        margin: 0;
+        width: 100%;}
+    main {
+        width: 100%;
+        color: #333;
+    }
+    #inner {
+        padding: 20px 10px 0 10px;
+    }
+    
+    aside {
+        width: 100%;
+    }
+    
+    #middle-inner {
+        padding: 10px 10px 20px 10px;
+    }
+    
+    h1 {
+        font-size: 20px;
+    }
+    
+    h2 {
+        font-size: 18px;
+    }
+    
+    h3 {
+        font-size: 16px;
+    }
+    
+    h4 {
+        font-size: 14px;
+    }
 }

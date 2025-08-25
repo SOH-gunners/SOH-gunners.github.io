@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+body {
+  background-color: #e0e0e0; /* ← ここで背景色を指定 */
+}
+
 h1 {
     font-size: 26px;
     font-weight: bold;
@@ -112,8 +116,8 @@ blockquote {
 a.bt-samp78{
   display: inline-block;
   position: relative;
-  top: 20px;  /* 本来の位置から "下" に20pxずらす */
-  left: 400px; /* 本来の位置から "右" に40pxずらす */
+  top: 400px;  /* 本来の位置から "下" に20pxずらす */
+  left: 650px; /* 本来の位置から "右" に40pxずらす */
   height: 120px;
   width: 120px;
   padding-left:1px;
@@ -184,7 +188,7 @@ a.bt-samp78:visited {
 .neumorphism-box {
   /* ▼ ここに指定のスタイルを記述 ▼ */
   border-radius: 8px;
-  background: #fff;
+  background: #e0e0e0;
   box-shadow:  5px 5px 10px #d0d0d0,
                -5px -5px 10px #f0f0f0;
   
@@ -195,7 +199,7 @@ a.bt-samp78:visited {
   justify-content: center;
   align-items: center;
   font-size: 1.2em;
-  color: #fff;
+  color: #232323;
 }
 
 @media screen and (max-width: 767px) {

@@ -229,7 +229,7 @@ aside {
 	color: #214555;
 }
 .side li a:hover {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 blockquote {

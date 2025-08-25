@@ -107,7 +107,7 @@ ul {
 	padding: 0;
 }
 li {
-	list-style: disc;
+	list-style: none;
 }
 p {
 	margin: 1em 0;
@@ -182,6 +182,7 @@ nav li {
 	list-style: none; /* liタグに直接指定して黒丸を消す */
 	margin: 0 10px; /* 左右に10pxの余白 */
 }
+
 
 /* ナビゲーション内のリンクの下線を消す */
 nav a {

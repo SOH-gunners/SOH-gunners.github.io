@@ -116,7 +116,7 @@ blockquote {
 a.bt-samp78{
   display: inline-block;
   position: relative;
-  top: 400px;  /* 本来の位置から "下" に20pxずらす */
+  top: -400px;  /* 本来の位置から "下" に20pxずらす */
   left: 650px; /* 本来の位置から "右" に40pxずらす */
   height: 120px;
   width: 120px;
@@ -187,8 +187,8 @@ a.bt-samp78:visited {
 
 .neumorphism-box {
   /* ▼ ここに指定のスタイルを記述 ▼ */
-  margin-top: 350px;  /* 上に50pxの余白を追加（下に移動） */
-  margin-left: -200px; /* 左に30pxの余白を追加（右に移動） */
+  margin-top: 50px;  /* 上に50pxの余白を追加（下に移動） */
+  margin-left: -300px; /* 左に30pxの余白を追加（右に移動） */
   
   border-radius: 8px;
   background: #e0e0e0;
@@ -196,8 +196,8 @@ a.bt-samp78:visited {
                -5px -5px 10px #f0f0f0;
   
   /* ▼ 見栄えを良くするための追加スタイル（任意） ▼ */
-  width: 1000px;
-  height: 700px;
+  width: 1200px;
+  height: 1000px;
   display: flex;
   justify-content: center;
   align-items: center;

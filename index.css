@@ -114,7 +114,10 @@ blockquote {
 
 /* -------------ボタン作成------------- */
 a.bt-samp78{
-  display: inline-block;
+  display: inline-flex;      /* flexboxコンテナに変更 */
+  justify-content: center;  /* 中身を水平方向の中央に */
+  align-items: center;      /* 中身を垂直方向の中央に */
+
   position: relative;
   top: -400px;  /* 本来の位置から "下" に20pxずらす */
   left: 650px; /* 本来の位置から "右" に40pxずらす */

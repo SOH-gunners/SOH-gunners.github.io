@@ -112,6 +112,8 @@ blockquote {
 a.bt-samp78{
   display: inline-block;
   position: relative;
+  top: 20px;  /* 本来の位置から "下" に20pxずらす */
+  left: 400px; /* 本来の位置から "右" に40pxずらす */
   height: 120px;
   width: 120px;
   padding-left:1px;
@@ -193,7 +195,7 @@ a.bt-samp78:visited {
   justify-content: center;
   align-items: center;
   font-size: 1.2em;
-  color: #777;
+  color: #fff;
 }
 
 @media screen and (max-width: 767px) {

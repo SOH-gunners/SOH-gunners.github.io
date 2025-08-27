@@ -288,10 +288,24 @@ body {
         width: 12vw; /* A/Bボタンを少し小さく */
         height: 12vw;
         font-size: 5.0vw; /* 文字も合わせて小さく */
+        -webkit-tap-highlight-color: transparent; /* ← これを追加 */
+        outline: none; /* ← これも追加推奨 */
+    }
+    .button:active {
+        /* PC版のtransformからrotate(-25deg)を維持しつつ、縮小と translateY を適用 */
+        transform: rotate(-25deg) translateY(0.5vw) scale(0.95); /* スマホに合わせて値を調整 */
+        box-shadow: 0.5vw 0.5vw 1vw rgba(0,0,0,0.4); /* 影もスマホに合わせて調整 */
+        background-color: #882453; /* 少し暗い色 */
+        transition: all 0.00001s; /* 素早い反応 */
     }
     .d-pad {
         width: 30vw;
         height: 30vw;
+    }
+    .d-pad-btn:active {
+        transform: translateY(0.5vw); /* スマホに合わせて値を調整 */
+        box-shadow: 0.5vw 0.5vw 1vw rgba(0,0,0,0.4); /* 影もスマホに合わせて調整 */
+        background-color: #222; /* 十字キーも少し暗い色 */
     }
     .ab-buttons {
         /* margin-right: -10vw; を削除、または調整 */

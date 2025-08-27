@@ -209,6 +209,7 @@ body {
 }
 
 /* --- レスポンシブ対応 --- */
+/* --- レスポンシブ対応 --- */
 @media (max-width: 620px) {
     /* bodyの余白をなくし、画面全体を使えるようにする */
     body {
@@ -221,9 +222,8 @@ body {
         max-width: 100%;
         height: 100vh; /* 画面の高さに合わせる */
         height: 100dvh; /* 動的ビューポート高（アドレスバーなどを考慮） */
-        padding: 20px;
+        padding: 15px; /* ここを調整: 左右のパディングを少し減らす */
         border-radius: 0; /* 角の丸みをなくす */
-        /* Flexboxを使い、中身を縦に並べる */
         display: flex;
         flex-direction: column;
     }
@@ -238,11 +238,13 @@ body {
         width: 100%;
         display: flex;
         flex-direction: column;
+        padding: 10px; /* ここを調整: 画面フレームのパディングも少し減らす */
     }
     /* screen-contentの高さを可変にする */
     .screen-content {
-        height: 100%; /* 親要素いっぱいに広がる */
+        height: 100%;
         flex-grow: 1;
+        padding: 15px; /* ここを調整: コンテンツのパディングも少し減らす */
     }
 
     /* --- 文字サイズのレスポンシブ対応 --- */
@@ -267,9 +269,9 @@ body {
         flex-shrink: 0;
         padding: 10px 0;
         display: flex;
-        justify-content: center; /* 横方向の中央揃えに戻す */
+        justify-content: center; /* 横方向の中央揃え */
         align-items: center;
-        gap: 18vw; /* 十字ボタンとA/Bボタンの間隔を広げる */
+        gap: 8vw; /* 十字ボタンとA/Bボタンの間隔 */
     }
     .button {
         width: 16vw; /* A/Bボタンを少し小さく */
@@ -281,13 +283,14 @@ body {
         height: 30vw;
     }
     .ab-buttons {
-        margin-right: -10vw;
+        /* margin-right: -10vw; を削除、または調整 */
+        margin-right: 0; /* 右側のマイナス余白をなくす */
+        margin-left: 0; /* 左側にも余計な余白がないか確認 */
     }
     .d-pad-btn::after {
         font-size: 2.2vw;
-        color: #555; /* スマホでも色を明示的に指定 */
-        text-align: center; /* 中央揃えに */
-        /* 各方向のラベル位置を再調整 */
+        color: #555;
+        text-align: center;
     }
     .up::after {
         bottom: calc(100% + 5px);
@@ -299,14 +302,13 @@ body {
         left: 50%;
         transform: translateX(-50%);
     }
-    /* 左右のラベルはボタンの外側に固定 */
     .left::after {
-        right: calc(100% + 1.5vw); /* 右からの距離を調整 */
+        right: calc(100% + 1.5vw);
         top: 50%;
         transform: translateY(-50%);
     }
     .right::after {
-        left: calc(100% + 1.5vw); /* 左からの距離を調整 */
+        left: calc(100% + 1.5vw);
         top: 50%;
         transform: translateY(-50%);
     }

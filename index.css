@@ -48,7 +48,7 @@ body {
 }
 
 .screen-content {
-    background-color: #9bbc0f;
+    background-color: #acb586;/*#9bbc0f;*/
     color: #0f380f;
     padding: 20px;
     height: 570px;
@@ -176,7 +176,7 @@ body {
 /* summaryタグ（クリックする部分）のスタイル */
 .hobby-text summary {
     background-color: #0f380f; /* 画面の文字色と同じ背景 */
-    color: #9bbc0f; /* 画面の背景色と同じ文字色 */
+    color: #acb586; /* 画面の背景色と同じ文字色 */
     padding: 8px 12px;
     font-family: 'Press Start 2P', 'DotGothic16', sans-serif; /* 見出しと同じフォント */
     font-size: 18px;

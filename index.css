@@ -209,7 +209,6 @@ body {
 }
 
 /* --- レスポンシブ対応 --- */
-/* --- レスポンシブ対応 --- */
 @media (max-width: 620px) {
     /* bodyの余白をなくし、画面全体を使えるようにする */
     body {
@@ -271,7 +270,7 @@ body {
         display: flex;
         justify-content: center; /* 横方向の中央揃え */
         align-items: center;
-        gap: 8vw; /* 十字ボタンとA/Bボタンの間隔 */
+        gap: 18vw; /* 十字ボタンとA/Bボタンの間隔 */
     }
     .button {
         width: 16vw; /* A/Bボタンを少し小さく */

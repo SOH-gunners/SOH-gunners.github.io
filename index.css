@@ -67,7 +67,7 @@ body {
     font-family: 'Press Start 2P', 'DotGothic16', sans-serif;
 }
 .myface { width: 150px; height: 150px; border-radius: 8px; border: 2px solid #0f380f; margin-bottom: 15px; }
-.myhobby { width: 300px; height: 450px; border-radius: 8px; border: 2px solid #0f380f; margin-bottom: 15px; }
+/* .myhobby { width: 150px; height: 220px; border-radius: 8px; border: 2px solid #0f380f; margin-bottom: 15px; } */
 .profile-title { font-size: 28px; margin-bottom: 15px; }
 .profile-content h2 { font-size: 25px; margin: 10px 0; }
 .profile-content p { font-size: 20px; font-weight: 800; line-height: 1.6; margin: 5px 0; }
@@ -209,6 +209,16 @@ body {
     font-size: 18px;
     line-height: 1.7;
     color: #0f380f; /* 文字色を明示的に指定 */
+}
+
+.hobby-text details img {
+    max-width: calc(100% - 30px); /* 左右に15pxずつの余白を確保 */
+    height: auto;    /* アスペクト比を維持 */
+    display: block;  /* インライン要素の余白をなくす */
+    margin: 15px auto; /* 上下に余白、左右中央寄せ */
+    border: 2px solid #0f380f; /* 画面の文字色と同じ枠線 */
+    border-radius: 4px; /* 少し角を丸める */
+    box-sizing: border-box; /* paddingやborderを幅に含める */
 }
 
 /* YouTube動画のコンテナ */

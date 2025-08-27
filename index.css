@@ -266,16 +266,18 @@ body {
     /* --- ボタン類のレスポンシブ対応 --- */
     .controls-area {
         flex-shrink: 0;
-        padding: 10px 0;
+        padding: 5px 0;
         display: flex;
         justify-content: center; /* 横方向の中央揃え */
         align-items: center;
-        gap: 18vw; /* 十字ボタンとA/Bボタンの間隔 */
+        gap: 22vw; /* 十字ボタンとA/Bボタンの間隔 */
+        position: relative; /* ← 位置を調整するために追加 */
+        left: 4vw;          /* ← 全体を右に4%ずらす */
     }
     .button {
-        width: 16vw; /* A/Bボタンを少し小さく */
-        height: 16vw;
-        font-size: 5.5vw; /* 文字も合わせて小さく */
+        width: 12vw; /* A/Bボタンを少し小さく */
+        height: 12vw;
+        font-size: 5.0vw; /* 文字も合わせて小さく */
     }
     .d-pad {
         width: 30vw;

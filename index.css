@@ -98,15 +98,21 @@ body {
     box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
     transition: background-color 0.2s;
     position: relative; /* ラベルを配置するための基準 */
+    z-index: 1; /* ← これを追加 */
 }
 .d-pad-btn:hover { background-color: #555; }
-.d-pad-btn:active { transform: translateY(1px); box-shadow: 1px 1px 2px rgba(0,0,0,0.4); }
+.d-pad-btn:active { transform: translateY(2px); box-shadow: 1px 1px 2px rgba(0,0,0,0.4); }
 
 .up { grid-area: up; border-radius: 5px 5px 0 0; }
 .down { grid-area: down; border-radius: 0 0 5px 5px; }
 .left { grid-area: left; border-radius: 5px 0 0 5px; }
 .right { grid-area: right; border-radius: 0 5px 5px 0; }
-.d-pad-center { grid-area: center; background: #333; }
+.d-pad-center {
+    grid-row: 2 / 4;
+    grid-column: 2 / 3;
+    background: #333;
+    border-radius: 0 0 5px 5px;
+}
 
 /* --- 十字キーのラベルをボタンの外側、かつ本体枠内に配置 --- */
 .d-pad-btn::after {
@@ -306,6 +312,7 @@ body {
         transform: translateY(0.5vw); /* スマホに合わせて値を調整 */
         box-shadow: 0.5vw 0.5vw 1vw rgba(0,0,0,0.4); /* 影もスマホに合わせて調整 */
         background-color: #222; /* 十字キーも少し暗い色 */
+        transition: all 0.00001s; /* 素早い反応 */
     }
     .ab-buttons {
         /* margin-right: -10vw; を削除、または調整 */

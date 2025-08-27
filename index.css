@@ -67,6 +67,7 @@ body {
 /* --- 操作ボタンエリア --- */
 .controls-area {
     display: flex;
+    padding: 10px 0;
     /* 十字ボタンを右にずらすために調整 */
     justify-content: flex-end; /* 右端に寄せる */
     align-items: center;

@@ -1,697 +1,316 @@
-@charset "UTF-8";
-
+/* --- 全体スタイルとフォント設定 --- */
 body {
-  background-color: #232323;/*#e0e0e0; /* ← ここで背景色を指定 */
-  overflow: hidden; /* 全要素でスクロール禁止 */
-  font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic' 
-}
-
-h1 {
-    font-size: 50px;
-    font-weight: bold;
-    padding: 10px 0 0 0;
-    margin: 0;
-}
-
-h1 a {
-    font-weight: bold;
-    text-decoration: none;
-}
-
-h1 a:hover {
-    text-decoration: none;
-}
-
-.description {
-    line-height: 1.2;
-    color: #f3f2eb;
-    margin: 0.5em 0 1em 0;
-}
-
-h2 {
-    font-size: 22px;
-    margin: 0;
-    padding: 4px 0;
-    border-bottom: 1px solid #999;
-}
-
-#content-wrapper {
-  margin: 0 auto;
-  width: 694px;
-}
-
-main {
-  color: #333;
-}
-#inner {
-    padding: 20px 0 0 0;
-}
-ul {
-    margin: 0 0 0 1em;
-    padding: 0;
-}
-li {
-    list-style: disc;
-}
-p {
-    margin: 1em 0;
-}
-img {
-    max-width: 100%;
-    max-height: 1080;
-    border: 0;
-}
-hr {
-    border-width: 1px 0 0 0;
-    border-style: solid;
-    border-color: #ccc;
-    height: 1px;
-}
-/* a {
-    color: #030202;/* 黒 
-    font-weight: normal;
-}*/
-
-
-blockquote {
-    border: 1px solid #ccc;
-    padding: 5px;
-    margin: 10px;
-}
-
-
-
-/* -------------ボタン作成------------- */
-a.bt-samp78_no1{
-    display: inline-block;
-    position: relative;
-    top: -500px;
-    left: 870px;
-    height: 110px;
-    width: 110px;
-    padding-left:1px;
-    text-decoration: none;
-    line-height: 110px;
-    text-align: center;
-    color: #4a4545;
-    font-size: 18px;
-    font-weight: bold;
-    /* text-shadow: 0px 1px 0px #fafafa; */
-    background: #6c7275;
-    background: -webkit-gradient(linear, left top, left bottom, from(#c7d3d9), to(#6c7275));
-    background: -moz-linear-gradient(top,  #c7d3d9,  #6c7275);
-    background: -o-linear-gradient(top,  #c7d3d9,  #6c7275);
-    background: -ms-linear-gradient(top,  #c7d3d9,  #6c7275);
-    background: linear-gradient(top,  #c7d3d9,  #6c7275);
-    border: 1px solid #dcd9d8;
-    border-bottom: 1px solid #c1c1bd;
-    border-radius: 50%;
-    -webkit-box-shadow: inset 0 2px 1px rgba(255,255,255,0.6), 0 0 1px #c7c5c1;
-    -moz-box-shadow: inset 0 2px 1px rgba(255,255,255,0.6), 0 0 1px #c7c5c1;
-    box-shadow: inset 0 2px 1px rgba(255,255,255,0.6), 0 0 1px #c7c5c1;
-    /* text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.7); */
-}
-/* 訪問済みリンクでも色が変わらないようにする */
-a.bt-samp78_no1:visited {
-    color: #4a4545;
-}/* マゼンダ */
-a.bt-samp78_no1:hover { /* マウスオーバー時 */
-    background: #c7d3d9;
-    background: -webkit-gradient(linear, left top, left bottom, from(#c7d3d9), to(#6c7275));
-    background: -moz-linear-gradient(top,  #c7d3d9,  #6c7275);
-    background: -o-linear-gradient(top,  #c7d3d9,  #6c7275);
-    background: -ms-linear-gradient(top,  #c7d3d9,  #6c7275);
-    background: linear-gradient(top,  #c7d3d9,  #6c7275);
-    -webkit-box-shadow: inset 0 2px 1px rgba(0,0,0,0.1);
-    -moz-box-shadow: inset 0 2px 1px rgba(0,0,0,0.1);
-    box-shadow: inset 0 2px 1px rgba(0,0,0,0.1);
-    border-bottom:none;
-}
-a.bt-samp78_no1:active { /* クリック時 */
-    -ms-transform: translateY(2px);
-    -webkit-transform: translateY(2px);
-    transform: translateY(3px);
-    color: #2a72ac;
-    text-shadow: 0 0 5px #fff, 0 0 10px #2a72ac;
-}
-
-/* -------------------------------- */
-
-/* -------------ボタン作成------------- */
-a.bt-samp78_no2{
-    display: inline-block;
-    position: relative;
-    top: -410px;
-    left: 660px;
-    height: 110px;
-    width: 110px;
-    padding-left:1px;
-    text-decoration: none;
-    line-height: 110px;
-    text-align: center;
-    color: #4a4545;
-    font-size: 20px;
-    font-weight: bold;
-    /* text-shadow: 0px 1px 0px #fafafa; */
-    background: #6c7275;
-    background: -webkit-gradient(linear, left top, left bottom, from(#c7d3d9), to(#6c7275));
-    background: -moz-linear-gradient(top,  #c7d3d9,  #6c7275);
-    background: -o-linear-gradient(top,  #c7d3d9,  #6c7275);
-    background: -ms-linear-gradient(top,  #c7d3d9,  #6c7275);
-    background: linear-gradient(top,  #c7d3d9,  #6c7275);
-    border: 1px solid #dcd9d8;
-    border-bottom: 1px solid #c1c1bd;
-    border-radius: 50%;
-    -webkit-box-shadow: inset 0 2px 1px rgba(255,255,255,0.6), 0 0 1px #c7c5c1;
-    -moz-box-shadow: inset 0 2px 1px rgba(255,255,255,0.6), 0 0 1px #c7c5c1;
-    box-shadow: inset 0 2px 1px rgba(255,255,255,0.6), 0 0 1px #c7c5c1;
-    /* text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.7); */
-}
-/* 訪問済みリンクでも色が変わらないようにする */
-a.bt-samp78_no2:visited {
-    color: #4a4545;
-}/* マゼンダ */
-a.bt-samp78_no2:hover { /* マウスオーバー時 */
-    background: #c7d3d9;
-    background: -webkit-gradient(linear, left top, left bottom, from(#c7d3d9), to(#6c7275));
-    background: -moz-linear-gradient(top,  #c7d3d9,  #6c7275);
-    background: -o-linear-gradient(top,  #c7d3d9,  #6c7275);
-    background: -ms-linear-gradient(top,  #c7d3d9,  #6c7275);
-    background: linear-gradient(top,  #c7d3d9,  #6c7275);
-    -webkit-box-shadow: inset 0 2px 1px rgba(0,0,0,0.1);
-    -moz-box-shadow: inset 0 2px 1px rgba(0,0,0,0.1);
-    box-shadow: inset 0 2px 1px rgba(0,0,0,0.1);
-    border-bottom:none;
-}
-a.bt-samp78_no2:active { /* クリック時 */
-    -ms-transform: translateY(2px);
-    -webkit-transform: translateY(2px);
-    transform: translateY(3px);
-    color: #ac402a;
-    text-shadow: 0 0 5px #fff, 0 0 10px #ac402a;
-}
-
-/* -------------------------------- */
-
-/* -------------ボタン作成------------- */
-a.bt-samp78_no3{
-    display: inline-block;
-    position: relative;
-    top: -410px;
-    left: 725px;
-    height: 110px;
-    width: 110px;
-    padding-left:1px;
-    text-decoration: none;
-    line-height: 110px;
-    text-align: center;
-    color: #4a4545;
-    font-size: 13px;
-    font-weight: 900;
-    /* text-shadow: 0px 1px 0px #fafafa; */
-    background: #6c7275;
-    background: -webkit-gradient(linear, left top, left bottom, from(#c7d3d9), to(#6c7275));
-    background: -moz-linear-gradient(top,  #c7d3d9,  #6c7275);
-    background: -o-linear-gradient(top,  #c7d3d9,  #6c7275);
-    background: -ms-linear-gradient(top,  #c7d3d9,  #6c7275);
-    background: linear-gradient(top,  #c7d3d9,  #6c7275);
-    border: 1px solid #dcd9d8;
-    border-bottom: 1px solid #c1c1bd;
-    border-radius: 50%;
-    -webkit-box-shadow: inset 0 2px 1px rgba(255,255,255,0.6), 0 0 1px #c7c5c1;
-    -moz-box-shadow: inset 0 2px 1px rgba(255,255,255,0.6), 0 0 1px #c7c5c1;
-    box-shadow: inset 0 2px 1px rgba(255,255,255,0.6), 0 0 1px #c7c5c1;
-    /* text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.7); */
-}
-/* 訪問済みリンクでも色が変わらないようにする */
-a.bt-samp78_no3:visited {
-    color: #4a4545;
-}/* マゼンダ */
-a.bt-samp78_no3:hover { /* マウスオーバー時 */
-    background: #c7d3d9;
-    background: -webkit-gradient(linear, left top, left bottom, from(#c7d3d9), to(#6c7275));
-    background: -moz-linear-gradient(top,  #c7d3d9,  #6c7275);
-    background: -o-linear-gradient(top,  #c7d3d9,  #6c7275);
-    background: -ms-linear-gradient(top,  #c7d3d9,  #6c7275);
-    background: linear-gradient(top,  #c7d3d9,  #6c7275);
-    -webkit-box-shadow: inset 0 2px 1px rgba(0,0,0,0.1);
-    -moz-box-shadow: inset 0 2px 1px rgba(0,0,0,0.1);
-    box-shadow: inset 0 2px 1px rgba(0,0,0,0.1);
-    border-bottom:none;
-}
-a.bt-samp78_no3:active { /* クリック時 */
-    -ms-transform: translateY(2px);
-    -webkit-transform: translateY(2px);
-    transform: translateY(3px);
-    color: #46ac2a;
-    text-shadow: 0 0 5px #fff, 0 0 10px #46ac2a;
-}
-
-/* -------------------------------- */
-
-
-/* -------------ボタン作成------------- */
-a.bt-samp78_no4{
-    display: inline-block;
-    position: relative;
-    top: -315px;
-    left: 515px;
-    height: 110px;
-    width: 110px;
-    padding-left:1px;
-    text-decoration: none;
-    line-height: 110px;
-    text-align: center;
-    color: #4a4545;
-    font-size: 20px;
-    font-weight: bold;
-    /* text-shadow: 0px 1px 0px #fafafa; */
-    background: #6c7275;
-    background: -webkit-gradient(linear, left top, left bottom, from(#c7d3d9), to(#6c7275));
-    background: -moz-linear-gradient(top,  #c7d3d9,  #6c7275);
-    background: -o-linear-gradient(top,  #c7d3d9,  #6c7275);
-    background: -ms-linear-gradient(top,  #c7d3d9,  #6c7275);
-    background: linear-gradient(top,  #c7d3d9,  #6c7275);
-    border: 1px solid #dcd9d8;
-    border-bottom: 1px solid #c1c1bd;
-    border-radius: 50%;
-    -webkit-box-shadow: inset 0 2px 1px rgba(255,255,255,0.6), 0 0 1px #c7c5c1;
-    -moz-box-shadow: inset 0 2px 1px rgba(255,255,255,0.6), 0 0 1px #c7c5c1;
-    box-shadow: inset 0 2px 1px rgba(255,255,255,0.6), 0 0 1px #c7c5c1;
-    /* text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.7); */
-}
-/* 訪問済みリンクでも色が変わらないようにする */
-a.bt-samp78_no4:visited {
-    color: #4a4545;
-}/* マゼンダ */
-a.bt-samp78_no4:hover { /* マウスオーバー時 */
-    background: #c7d3d9;
-    background: -webkit-gradient(linear, left top, left bottom, from(#c7d3d9), to(#6c7275));
-    background: -moz-linear-gradient(top,  #c7d3d9,  #6c7275);
-    background: -o-linear-gradient(top,  #c7d3d9,  #6c7275);
-    background: -ms-linear-gradient(top,  #c7d3d9,  #6c7275);
-    background: linear-gradient(top,  #c7d3d9,  #6c7275);
-    -webkit-box-shadow: inset 0 2px 1px rgba(0,0,0,0.1);
-    -moz-box-shadow: inset 0 2px 1px rgba(0,0,0,0.1);
-    box-shadow: inset 0 2px 1px rgba(0,0,0,0.1);
-    border-bottom:none;
-}
-a.bt-samp78_no4:active { /* クリック時 */
-    -ms-transform: translateY(2px);
-    -webkit-transform: translateY(2px);
-    transform: translateY(3px);
-    color: #aaac2a;
-    text-shadow: 0 0 5px #fff, 0 0 10px #aaac2a;
-}
-/* -------------------------------- */
-
-/* -------------ボタン作成------------- */
-
-a.bt-samp79{
-display: inline-block;
-position: relative;
-top: -150px;
-left: -800px;
-height: 40px;
-width: 40px;
-padding-left:1px;
-text-decoration: none;
-line-height: 40px;
-text-align: center;
-color: #424040;
-font-size: 25px;
-/*text-shadow: 0px 1px 0px #fafafa;*/
-background: #cfcecc;
-background: -webkit-gradient(linear, left top, left bottom, from(#cfcecc), to(#c4c4c2));
-background: -moz-linear-gradient(top,  #cfcecc,  #c4c4c2);
-background: -o-linear-gradient(top,  #cfcecc,  #c4c4c2);
-background: -ms-linear-gradient(top,  #cfcecc,  #c4c4c2);
-background: linear-gradient(top,  #cfcecc,  #c4c4c2);
-border: 1px solid #dcd9d8;
-border-bottom: 1px solid #c1c1bd;
-border-radius: 50%;
--webkit-box-shadow: inset 0 2px 1px rgba(255,255,255,0.6), 0 0 1px #c7c5c1;
--moz-box-shadow: inset 0 2px 1px rgba(255,255,255,0.6), 0 0 1px #c7c5c1;
-box-shadow: inset 0 2px 1px rgba(255,255,255,0.6), 0 0 1px #c7c5c1;
-/*text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.7);*/
-}
-a.bt-samp79:hover { /* マウスオーバー時 */
-background: #cfcecc;
-background: -webkit-gradient(linear, left top, left bottom, from(#cfcecc), to(#c4c4c2));
-background: -moz-linear-gradient(top,  #cfcecc,  #c4c4c2);
-background: -o-linear-gradient(top,  #cfcecc,  #c4c4c2);
-background: -ms-linear-gradient(top,  #cfcecc,  #c4c4c2);
-background: linear-gradient(top,  #cfcecc,  #c4c4c2);
--webkit-box-shadow: inset 0 2px 1px rgba(0,0,0,0.1);
--moz-box-shadow: inset 0 2px 1px rgba(0,0,0,0.1);
-box-shadow: inset 0 2px 1px rgba(0,0,0,0.1);
-border-bottom:none;
-}
-a.bt-samp79:active { /* クリック時 */
--ms-transform: translateY(2px);
--webkit-transform: translateY(2px);
-transform: translateY(2px);
-}
-
-/* 訪問済みリンクでも色が変わらないようにする */
-a.bt-samp79:visited {
-    color: #ce0ad1;
-}/* マゼンダ */
-
-.my-text {
-position: relative; /* 相対的な位置指定を有効に */
-color: #c4c4c2;
-top: -125px;
-left: -850px;
-}
-
-
-/* -------------------------------- */
-
-/* 画面作成 */
-
-.neumorphism-box {
-    /* ▼ ここに指定のスタイルを記述 ▼ */
-    
-    border-radius: 8px;
-    background: #232323;
-    box-shadow:  5px 5px 10px #121212,
-             -5px -5px 10px #353535;
-    
-/*     
-    5px 5px 10px #d0d0d0,
-                 -5px -5px 10px #f0f0f0; */
-    
-    /* ▼ 見栄えを良くするための追加スタイル（任意） ▼ */
-    position: relative; /* ← これが基準になります */
-    top: 25px;
-    left: -230px;
-    width: 1000px; /* 親要素の幅いっぱいに広がる */
-    height: 750px; /* 高さはコンテンツに応じて自動調整 */
+    background-color: #333;
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-size: 1.2em;
-    color: #232323;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
 
-.can-scroll {
-    border-radius: 8px;
+/* --- ゲームボーイ本体 --- */
+.gameboy-body {
+    background-color: #d8d8d0;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 15px;
+    padding: 30px 30px 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), inset 0 2px 4px rgba(255, 255, 255, 0.5);
+    border: 2px solid #b4b4ac;
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* --- 画面エリア --- */
+.screen-frame {
+    background-color: #808080;
+    border-radius: 10px;
     padding: 20px;
-    width: 900px;
-    height: 650px;
-    background-color: #f2f2f2;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.screen-header {
+    text-align: center;
+    color: #d8d8d0;
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+
+.screen-content {
+    background-color: #9bbc0f;
+    color: #0f380f;
+    padding: 20px;
+    height: 570px;
+    border-radius: 5px;
+    border: 2px solid #333;
+    overflow-y: auto;
+    background-image: linear-gradient(rgba(15, 56, 15, 0.2) 50%, transparent 50%),
+                      linear-gradient(90deg, rgba(15, 56, 15, 0.2) 50%, transparent 50%);
+    background-size: 4px 4px;
+}
+
+.profile-content { text-align: center; }
+.profile-title,
+.profile-content h2 {
+    font-size: 22px; margin: 10px 0; 
+    font-family: 'Press Start 2P', 'DotGothic16', sans-serif;
+}
+.myface { width: 150px; height: 150px; border-radius: 8px; border: 2px solid #0f380f; margin-bottom: 15px; }
+.profile-title { font-size: 28px; margin-bottom: 15px; }
+.profile-content h2 { font-size: 25px; margin: 10px 0; }
+.profile-content p { font-size: 20px; line-height: 1.6; margin: 5px 0; }
+
+/* --- 操作ボタンエリア --- */
+.controls-area {
+    display: flex;
+    /* 十字ボタンを右にずらすために調整 */
+    justify-content: flex-end; /* 右端に寄せる */
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+    gap: 150px; /* 十字キーとABボタンの間隔を調整 */
+}
+
+/* --- 十字キー (D-Pad) --- */
+.d-pad {
+    position: relative;
+    width: 125px; /* サイズは維持 */
+    height: 125px;
+    display: grid;
+    grid-template-areas: ". up ." "left center right" ". down .";
+    grid-template-rows: 35% 30% 35%;
+    grid-template-columns: 35% 30% 35%;
+}
+.d-pad-btn {
+    background-color: #333;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    transition: background-color 0.2s;
+    position: relative; /* ラベルを配置するための基準 */
+}
+.d-pad-btn:hover { background-color: #555; }
+.d-pad-btn:active { transform: translateY(1px); box-shadow: 1px 1px 2px rgba(0,0,0,0.4); }
+
+.up { grid-area: up; border-radius: 5px 5px 0 0; }
+.down { grid-area: down; border-radius: 0 0 5px 5px; }
+.left { grid-area: left; border-radius: 5px 0 0 5px; }
+.right { grid-area: right; border-radius: 0 5px 5px 0; }
+.d-pad-center { grid-area: center; background: #333; }
+
+/* --- 十字キーのラベルをボタンの外側、かつ本体枠内に配置 --- */
+.d-pad-btn::after {
+    content: attr(data-label);
     position: absolute;
-    top: 10;
-    left: 10;
-    overflow: auto;
-}
-
-.h1_home {
-    position: relative;
-    left: 0px;
-    font-size: 60px;
+    color: #555; /* 文字色をグレーに戻す */
+    font-family: sans-serif;
     font-weight: bold;
-    color: #232323;
-    border-bottom: 2px solid #232323;
+    white-space: nowrap;
+    font-size: 12px; /* 固定サイズ */
+}
+/* ラベルの位置調整 */
+.up::after { bottom: calc(100% + 5px); left: 50%; transform: translateX(-50%); }
+.down::after { top: calc(100% + 5px); left: 50%; transform: translateX(-50%); }
+/* "HOBBY" と "SNS" のラベルが本体枠に収まるように左右位置を調整 */
+.left::after { right: calc(100% + 15px); top: 50%; transform: translateY(-50%); } /* 左ボタンのラベルを右に寄せる */
+.right::after { left: calc(100% + 15px); top: 50%; transform: translateY(-50%); } /* 右ボタンのラベルを左に寄せる */
+
+/* 長い文字がボタンからはみ出す場合、文字サイズを少し小さくする調整 */
+.d-pad-btn[data-label="ACHIEVEMENTS"]::after {
+    font-size: 10px; /* "ACHIEVEMENTS" のみ少し小さく */
 }
 
-/* 顔写真の設定 */
-.myface {
-    position: relative;
-    top: 100px;
-    float: left;
-    padding: 0 1em 1em 0; 
+
+/* --- A/B ボタン --- */
+.ab-buttons {
+    display: flex;
+    align-items: center;
+    /* 十字ボタンを右にずらした分、ABボタンも右に寄せる */
+    margin-right: 20px; /* 本体右端からの余白 */
 }
-
-
-.h1_name {
-    position: relative;
-    top: 170px;
-    left: 100px;
-    font-size: 60px;
-    font-weight: bold;
-    color: #232323;
+.button {
+    width: 80px; height: 80px; background-color: #a02c63; border-radius: 50%;
+    color: white; text-decoration: none; display: flex; justify-content: center; align-items: center;
+    font-size: 30px; box-shadow: 3px 3px 5px rgba(0,0,0,0.4), inset -2px -2px 4px rgba(0,0,0,0.3);
+    border: 2px solid #601a3b; transition: all 0.1s;
 }
+.button.a { margin-left: 20px; transform: rotate(-25deg); }
+.button.b { transform: rotate(-25deg); }
+.button span { transform: rotate(25deg); }
+.button:active { transform: rotate(-25deg) translateY(2px); box-shadow: 1px 1px 2px rgba(0,0,0,0.4); }
 
-.home-text {
-    color: #232323;
-    top: 170px;
-    left: 20px;
-    font-size: 24px;
-    position: relative; /* 相対的な位置指定を有効に */
-  }
+/* --- HOBBYページ用アコーディオンのスタイル --- */
 
-.h1_history {
-    position: relative;
-    left: 0px;
-    font-size: 60px;
-    font-weight: bold;
-    color: #232323;
-    border-bottom: 2px solid #232323;
-}
-
+/* アコーディオン全体のテキストを左揃えに */
 .hobby-text {
-    color: #232323;
-    font-size: 24px;
-    position: relative; /* 相対的な位置指定を有効に */
-  }
-
-/*------------------アコーディオン---------------------------- */
-/*------------------YouTube---------------------------- */
-.accordion-001 {
-    max-width: 1000px;
-    background-color: #f2f2f2;
+    text-align: left;
+    margin-top: 20px;
 }
 
-.accordion-001:not([open]) {
-    margin-bottom: 7px;
+/* detailsタグの基本スタイル */
+.hobby-text details {
+    border: 2px solid #0f380f; /* 画面の文字色と同じ枠線 */
+    border-radius: 0; /* 四角いデザインに */
+    margin-bottom: 12px;
+    background: rgba(15, 56, 15, 0.1); /* 背景を少しだけ暗く */
 }
 
-.accordion-001 summary {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    padding: 1em 2em;
-    border-radius: 5px;
-    background-color: #de2626;
-    color: #fff;
-    font-weight: 600;
+/* summaryタグ（クリックする部分）のスタイル */
+.hobby-text summary {
+    background-color: #0f380f; /* 画面の文字色と同じ背景 */
+    color: #9bbc0f; /* 画面の背景色と同じ文字色 */
+    padding: 8px 12px;
+    font-family: 'Press Start 2P', 'DotGothic16', sans-serif; /* 見出しと同じフォント */
+    font-size: 18px;
     cursor: pointer;
+    list-style: none; /* 標準の▶マーカーを非表示 */
+    position: relative;
 }
 
-.accordion-001 summary::-webkit-details-marker {
+/* 標準の▶マーカーを非表示 (Chrome, Safari) */
+.hobby-text summary::-webkit-details-marker {
     display: none;
 }
 
-.accordion-001 summary::after {
-    transform: translateY(-25%) rotate(45deg);
-    width: 7px;
-    height: 7px;
-    margin-left: 10px;
-    border-bottom: 3px solid #fff;
-    border-right: 3px solid #fff;
-    content: '';
-    transition: transform .3s;
+/* カスタムマーカーを追加 */
+.hobby-text summary::before {
+    content: '▶';
+    margin-right: 10px;
 }
 
-.accordion-001[open] summary::after {
-    transform: rotate(225deg);
+/* 開いたときのカスタムマーカー */
+.hobby-text details[open] summary::before {
+    content: '▼';
 }
 
-.accordion-001 p {
-    transform: translateY(-10px);
-    opacity: 0;
-    margin: 0;
-    padding: 1em 2em 2em 2em;
-    color: #333333;
-    transition: transform .5s, opacity .5s;
+/* アコーディオン内のpタグ（本文）のスタイル */
+.hobby-text details p {
+    padding: 15px;
+    margin: 0; /* pタグのデフォルトマージンをリセット */
+    font-size: 18px;
+    line-height: 1.7;
+    color: #0f380f; /* 文字色を明示的に指定 */
 }
 
-.accordion-001[open] p {
-    transform: none;
-    opacity: 1;
-}
-
-/*------------------Game---------------------------- */
-.accordion-002 {
-    max-width: 1000px;
-    background-color: #f2f2f2;
-}
-
-.accordion-002:not([open]) {
-    margin-bottom: 7px;
-}
-
-.accordion-002 summary {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    padding: 1em 2em;
-    border-radius: 5px;
-    background-color: #2589d0;
-    color: #fff;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.accordion-002 summary::-webkit-details-marker {
-    display: none;
-}
-
-.accordion-002 summary::after {
-    transform: translateY(-25%) rotate(45deg);
-    width: 7px;
-    height: 7px;
-    margin-left: 10px;
-    border-bottom: 3px solid #fff;
-    border-right: 3px solid #fff;
-    content: '';
-    transition: transform .3s;
-}
-
-.accordion-002[open] summary::after {
-    transform: rotate(225deg);
-}
-
-.accordion-002 p {
-    transform: translateY(-10px);
-    opacity: 0;
-    margin: 0;
-    padding: 1em 2em 2em 2em;
-    color: #333333;
-    transition: transform .5s, opacity .5s;
-}
-
-.accordion-002[open] p {
-    transform: none;
-    opacity: 1;
-}
-
-/*------------------Anime---------------------------- */
-.accordion-003 {
-    max-width: 1000px;
-    background-color: #f2f2f2;
-}
-
-.accordion-003:not([open]) {
-    margin-bottom: 7px;
-}
-
-.accordion-003 summary {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    padding: 1em 2em;
-    border-radius: 5px;
-    background-color: #879b19;
-    color: #fff;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.accordion-003 summary::-webkit-details-marker {
-    display: none;
-}
-
-.accordion-003 summary::after {
-    transform: translateY(-25%) rotate(45deg);
-    width: 7px;
-    height: 7px;
-    margin-left: 10px;
-    border-bottom: 3px solid #fff;
-    border-right: 3px solid #fff;
-    content: '';
-    transition: transform .3s;
-}
-
-.accordion-003[open] summary::after {
-    transform: rotate(225deg);
-}
-
-.accordion-003 p {
-    transform: translateY(-10px);
-    opacity: 0;
-    margin: 0;
-    padding: 1em 2em 2em 2em;
-    color: #333333;
-    transition: transform .5s, opacity .5s;
-}
-
-.accordion-003[open] p {
-    transform: none;
-    opacity: 1;
-}
-/*-------------------------------------------------- */
-
+/* YouTube動画のコンテナ */
 .responsive {
-    position: relative;
-    width: 100%;
-    left: 170px;
-    /* aspect-ratio: 16/9; */
-    }
-
-.footer {
-    position: sticky;
-    top: 100vh;
-    /* SVGを背景画像として指定 */
-    background-image: url("wave.svg");
-    /* 画像が繰り返し表示されないようにする */
-    background-repeat: no-repeat;
-    /* 画像が要素全体を覆うように調整
-    background-size: cover;*/
-    /* 高さをつけないと背景が見えないので注意 */
-    height: 320px;
-    width: 100%;
-    
-    font-size: 15px;
-    clear: both;
-
-    ext-align: center;
-    color: #fff;
+    padding: 0 15px 15px 15px; /* 動画の上下左右に余白 */
 }
 
+/* YouTube動画のiframe */
+.responsive iframe {
+    max-width: 100%; /* 横幅を画面に合わせる */
+    height: auto;
+    aspect-ratio: 16 / 9; /* 16:9の比率を維持 */
+    border: 2px solid #0f380f; /* 動画に枠線を追加 */
+    box-sizing: border-box;
+}
 
-/* @media screen and (max-width: 767px) {
-    .description {
-        
+/* --- レスポンシブ対応 --- */
+@media (max-width: 620px) {
+    /* bodyの余白をなくし、画面全体を使えるようにする */
+    body {
+        padding: 0;
     }
-    
-    #content-wrapper {
-        margin: 0;
-        width: 100%;}
-    main {
+
+    /* ゲームボーイ本体を画面いっぱいに広げる */
+    .gameboy-body {
         width: 100%;
-        color: #333;
+        max-width: 100%;
+        height: 100vh; /* 画面の高さに合わせる */
+        height: 100dvh; /* 動的ビューポート高（アドレスバーなどを考慮） */
+        padding: 20px;
+        border-radius: 0; /* 角の丸みをなくす */
+        /* Flexboxを使い、中身を縦に並べる */
+        display: flex;
+        flex-direction: column;
     }
-    #inner {
-        padding: 20px 10px 0 10px;
+
+    /* 画面エリアが残りの高さを全て使うようにする */
+    .screen-area {
+        flex-grow: 1;
+        overflow: hidden; /* はみ出し防止 */
+        display: flex;
     }
-    
-    aside {
+    .screen-frame {
         width: 100%;
+        display: flex;
+        flex-direction: column;
     }
-    
-    #middle-inner {
-        padding: 10px 10px 20px 10px;
+    /* screen-contentの高さを可変にする */
+    .screen-content {
+        height: 100%; /* 親要素いっぱいに広がる */
+        flex-grow: 1;
     }
-    
-    h1 {
-        font-size: 20px;
+
+    /* --- 文字サイズのレスポンシブ対応 --- */
+    .profile-title {
+        font-size: 6vw; /* メインタイトル */
     }
-    
-    h2 {
-        font-size: 18px;
+    .profile-content h2 {
+        font-size: 5vw; /* 名前 */
     }
-    
-    h3 {
-        font-size: 16px;
+    .profile-content p {
+        font-size: 3.5vw; /* 本文 */
     }
-    
-    h4 {
-        font-size: 14px;
+    .hobby-text summary {
+        font-size: 4vw; /* アコーディオンのタイトル */
     }
-}*/
+    .hobby-text details p {
+        font-size: 3.5vw; /* アコーディオンの本文 */
+    }
+
+    /* --- ボタン類のレスポンシブ対応 --- */
+    .controls-area {
+        flex-shrink: 0;
+        padding: 10px 0;
+        display: flex;
+        justify-content: center; /* 横方向の中央揃えに戻す */
+        align-items: center;
+        gap: 18vw; /* 十字ボタンとA/Bボタンの間隔を広げる */
+    }
+    .button {
+        width: 16vw; /* A/Bボタンを少し小さく */
+        height: 16vw;
+        font-size: 5.5vw; /* 文字も合わせて小さく */
+    }
+    .d-pad {
+        width: 30vw;
+        height: 30vw;
+    }
+    .ab-buttons {
+        margin-right: -10vw;
+    }
+    .d-pad-btn::after {
+        font-size: 2.2vw;
+        color: #555; /* スマホでも色を明示的に指定 */
+        text-align: center; /* 中央揃えに */
+        /* 各方向のラベル位置を再調整 */
+    }
+    .up::after {
+        bottom: calc(100% + 5px);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .down::after {
+        top: calc(100% + 5px);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    /* 左右のラベルはボタンの外側に固定 */
+    .left::after {
+        right: calc(100% + 1.5vw); /* 右からの距離を調整 */
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .right::after {
+        left: calc(100% + 1.5vw); /* 左からの距離を調整 */
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .d-pad-btn[data-label="ACHIEVEMENTS"]::after {
+        font-size: 1.8vw;
+    }
+}

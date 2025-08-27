@@ -2,44 +2,53 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="keywords" content="ページのキーワードA,B,C">
-<meta name="description" content="ページの説明">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="index.css">
-<title> Profile </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GB Profile</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="content-wrapper">
-        <main>
-            <div class="main">
-                <div id="inner">
-                    <!-- <h1><a href="index.html">HOME</a></h1> -->
-                    <div class="neumorphism-box">
-                        <div class="can-scroll">
-                            <!-- <h1 class="h1_home">柴田 大真</h1> -->
-                            <h1 class="h1_history">HISTORY</h1>
-                            <span class="home-text">
-                                <p>出身高校　渓泉学園多治見西高校　普通科蛍雪コース</p>
-                                <p>出身大学　中部大学　工学部　ロボット理工学科</p>
-                                <p>現在　中部大学院　工学研究科　ロボット理工学専攻</p>
-                            </span>
-                        </div>
+
+    <div class="gameboy-body">
+        <div class="screen-area">
+            <div class="screen-frame">
+                <div class="screen-header">
+                    <span class="dot-matrix-text">DOT MATRIX WITH STEREO SOUND</span>
+                </div>
+                <div class="screen-content">
+                    <div class="profile-content">
+                        <h1 class="profile-title">- HISTORY -</h1>
+                        <p>＜出身高校＞</p>
+                        <p>渓泉学園多治見西高校　普通科蛍雪コース</p>
+                        <p>▼</p>
+                        <p>＜出身大学＞</p>
+                        <p>中部大学　工学部　ロボット理工学科</p>
+                        <p>▼</p>
+                        <p>＜現在＞</p>
+                        <p>中部大学院　工学研究科　ロボット理工学専攻</p>
                     </div>
-                    
-                        <!-- From Uiverse.io by FColombati -->
-                    
-                    <nav>
-                        <a href="history.html" class="bt-samp78_no1"><i class="fa fa-list"></i>HISTORY</a>
-                        <a href="hobby.html" class="bt-samp78_no2"><i class="fa fa-info-circle"></i>HOBBY</a>
-                        <a href="achievements.html" class="bt-samp78_no3"><i class="fa fa-envelope"></i>ACHIEVEMENTS</a>
-                        <a href="SNS.html" class="bt-samp78_no4"><i class="fa fa-search"></i>SNS</a>
-                        <a href="index.html" class="bt-samp79"><i class="fa fa-home"></i></a>
-                        <span class="my-text">HOME</span> 
-                    </nav>
                 </div>
             </div>
-        </main>
+        </div>
+
+        <div class="controls-area">
+            <div class="d-pad">
+                <a href="history.html" class="d-pad-btn up" data-label="HISTORY"></a>
+                <a href="sns.html" class="d-pad-btn down" data-label="SNS"></a>
+                <a href="hobby.html" class="d-pad-btn left" data-label="HOBBY"></a>
+                <a href="achievements.html" class="d-pad-btn right" data-label="ACHIEVEMENTS"></a>
+                <div class="d-pad-center"></div>
+            </div>
+
+            <div class="ab-buttons">
+                <a href="index.html" class="button b"><span>B</span></a>
+                <a href="index.html" class="button a"><span>A</span></a>
+            </div>
+        </div>
+        
     </div>
 
 </body>

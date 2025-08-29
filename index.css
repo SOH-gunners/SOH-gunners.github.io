@@ -20,7 +20,7 @@ body {
 
 /* --- ゲームボーイ本体 --- */
 .gameboy-body {
-    background-color: #d8d8d0;
+    background-color: #faedc2;
     width: 100%;
     max-width: 600px;
     height: auto;
@@ -143,13 +143,13 @@ body {
     display: flex;
     align-items: center;
     /* 十字ボタンを右にずらした分、ABボタンも右に寄せる */
-    margin-right: 20px; /* 本体右端からの余白 */
+    margin-right: 10px; /* 本体右端からの余白 */
 }
 .button {
-    width: 80px; height: 80px; background-color: #a02c63; border-radius: 50%;
+    width: 80px; height: 80px; background-color: #263f8a; border-radius: 50%;
     color: white; text-decoration: none; display: flex; justify-content: center; align-items: center;
     font-size: 30px; box-shadow: 3px 3px 5px rgba(0,0,0,0.4), inset -2px -2px 4px rgba(0,0,0,0.3);
-    border: 2px solid #601a3b; transition: all 0.1s;
+    border: 3px solid #9c2675; transition: all 0.1s;
     -webkit-tap-highlight-color: transparent; /* ← これを追加 */
     outline: none; /* ← これも追加推奨 */
 }
@@ -165,6 +165,7 @@ body {
     text-align: left;
     margin-top: 20px;
 }
+
 
 /* detailsタグの基本スタイル */
 .hobby-text details {
@@ -211,6 +212,23 @@ body {
     color: #0f380f; /* 文字色を明示的に指定 */
 }
 
+/* アコーディオン内のリストのスタイル */
+.hobby-text details ul,
+.hobby-text details ol {
+    padding-left: 40px; /* リストのインデント（字下げ） */
+    margin: 15px 0; /* の間に適切な余白を設定 */
+}
+
+/* アコーディオン内のリスト項目（li）のスタイル */
+.hobby-text details li {
+    font-size: 18px; /* 本文と同じフォントサイズ */
+    line-height: 1.7; /* 本文と同じ行間 */
+    color: #0f380f;   /* 本文と同じ文字色 */
+    padding-left: 5px; /* マーカー（・や数字）とテキストの間の余白 */
+    margin-bottom: 0px; /* 各リスト項目間の余白 */
+    font-weight: 800;
+}
+
 .hobby-text details img {
     max-width: calc(100% - 30px); /* 左右に15pxずつの余白を確保 */
     height: auto;    /* アスペクト比を維持 */
@@ -234,6 +252,61 @@ body {
     border: 2px solid #0f380f; /* 動画に枠線を追加 */
     box-sizing: border-box;
 }
+
+/* --- お問い合わせボタンのスタイル --- */
+.contact-button-container {
+    margin-top: 30px; /* 上の要素との余白 */
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #0f380f; /* 画面の文字色と同じ */
+    color: #acb586; /* 画面の背景色と同じ */
+    font-family: 'Press Start 2P', 'DotGothic16', sans-serif; /* ドット絵フォント */
+    font-size: 18px;
+    text-decoration: none;
+    border: 2px solid #0f380f;
+    box-shadow: 4px 4px 0px #0f380f; /* 影をつけて立体感を出す */
+    transition: all 0.1s;
+}
+
+/* ボタンをホバーしたときのスタイル */
+.contact-button:hover {
+    background-color: #3a5c26;
+    color: #cdd4aa;
+}
+
+/* ボタンを押したときのスタイル */
+.contact-button:active {
+    transform: translate(4px, 4px); /* 影の分だけ動かす */
+    box-shadow: none; /* 押したときに影を消す */
+}
+
+.instagram-button {
+    display: inline-block;
+    margin-top: 5px; /* 上のh2要素との余白 */
+    transition: transform 0.2s ease; /* アニメーションを滑らかに */
+}
+
+/* ロゴの色を指定 */
+.instagram-button svg {
+    fill: #0f380f; /* 画面の文字色と同じ */
+    width: 60px;   /* ボタンの幅を大きくする */
+    height: 60px;  /* ボタンの高さを大きくする */
+}
+
+/* ホバーしたときに少し大きくする */
+.instagram-button:hover {
+    transform: scale(1.1);
+}
+
+/* 押したときに少し小さくする */
+.instagram-button:active {
+    transform: scale(0.95);
+    transition: transform 0.1s ease;
+}
+
 
 /* --- レスポンシブ対応 --- */
 @media (max-width: 620px) {
@@ -289,6 +362,9 @@ body {
     .hobby-text details p {
         font-size: 3.5vw; /* アコーディオンの本文 */
     }
+    .hobby-text details li {
+        font-size: 3.5vw; /* スマホでも本文と同じフォントサイズに */
+    }
 
     /* --- ボタン類のレスポンシブ対応 --- */
     .controls-area {
@@ -312,7 +388,7 @@ body {
         /* PC版のtransformからrotate(-25deg)を維持しつつ、縮小と translateY を適用 */
         transform: rotate(-25deg) translateY(0.5vw) scale(0.95); /* スマホに合わせて値を調整 */
         box-shadow: 0.5vw 0.5vw 1vw rgba(0,0,0,0.4); /* 影もスマホに合わせて調整 */
-        background-color: #882453; /* 少し暗い色 */
+        background-color: rgb(18, 46, 72); /* 少し暗い色 */
         transition: all 0.00001s; /* 素早い反応 */
     }
     .d-pad {
@@ -325,6 +401,28 @@ body {
         background-color: #222; /* 十字キーも少し暗い色 */
         transition: all 0.00001s; /* 素早い反応 */
     }
+    .contact-button-container {
+        margin-top: 5vw; /* 上の余白をvw単位で調整 */
+    }
+
+    .contact-button {
+        padding: 2vw 4vw; /* パディングをvw単位で調整 */
+        font-size: 3.5vw; /* 本文と同じくらいのサイズに */
+        box-shadow: 0.8vw 0.8vw 0px #0f380f; /* 影もvw単位で調整 */
+        -webkit-tap-highlight-color: transparent; /* ← これを追加 */
+        outline: none; /* ← これも追加推奨 */
+    }
+
+    .contact-button:active {
+        transform: translate(0.8vw, 0.8vw); /* 影の分だけ動かす */
+        transition: all 0.00001s; /* 素早い反応 */
+    }
+
+    .instagram-button svg {
+        width: 10vw; /* ロゴの幅を画面サイズに合わせる */
+        height: 10vw; /* ロゴの高さを画面サイズに合わせる */
+    }
+
     .ab-buttons {
         /* margin-right: -10vw; を削除、または調整 */
         margin-right: 0; /* 右側のマイナス余白をなくす */

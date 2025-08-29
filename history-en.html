@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
-<html lang="ja"> 
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+    <title>History</title>
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,15 +13,13 @@
 <body>
 
     <div class="gameboy-body">
-        
         <div class="screen-area">
             <div class="screen-frame">
                 <div class="screen-header">
                     <span class="dot-matrix-text">IT'S A PIECE OF CAKE!</span>
                 </div>
                 <div class="screen-content">
-                    
-                    <div class="lang-switch-container" data-current-lang="jp">
+                    <div class="lang-switch-container" data-current-lang="en">
                         <label class="lang-switch">
                             <input type="checkbox" id="lang-toggle">
                             <span class="slider"></span>
@@ -28,23 +27,22 @@
                             <span class="lang-text en">EN</span>
                         </label>
                     </div>
-
                     <div class="profile-content">
-                        <h1 class="profile-title">- PROFILE -</h1>
-                        <img class="myface" src="1000004066.jpg" alt="写真">
-                        <h2>Hiromasa Shibata
-                            <p>柴田 大真</p>
-                        </h2>
-                        <p>2002年12月，岐阜県多治見市で生まれる．</p>
-                        <p>現在は大学院にて深層学習分野を研究．</p>
-                        <p>↓のボタンで詳しい情報をチェック！！</p>
-                        <p>　</p>
-                        <p>=================================</p>
-                        <p>・＋ボタンで学歴などの詳細選択</p>
-                        <p>・A,BボタンでPROFILE画面に戻る</p>
+                        <h1 class="profile-title">- HISTORY -</h1>
+                        <p>＜High School＞</p>
+                            <p>Tajimi Nishi High School, Keisetsu Course</p>
+                            <p>▼</p>
+                            <p>＜University＞</p>
+                            <p>Chubu University, College of Engineering, Department of Robotics Science and Engineering</p>
+                            <p>▼</p>
+                            <p>＜Current＞</p>
+                            <p>Chubu University, Graduate School of Engineering, Robotics Science and Engineering Major</p>
                     </div>
                 </div>
-            </div> </div> <div class="controls-area">
+            </div>
+        </div>
+
+        <div class="controls-area">
             <div class="d-pad">
                 <a href="#" data-lang-href="history" class="d-pad-btn up" data-label="HISTORY"></a>
                 <a href="#" data-lang-href="SNS" class="d-pad-btn down" data-label="SNS"></a>
@@ -61,5 +59,7 @@
         
     </div>
     <script src="script.js"></script>
+
+
 </body>
 </html>

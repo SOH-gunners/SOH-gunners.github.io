@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GB Profile</title>
+    <title>History</title>
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,6 +19,14 @@
                     <span class="dot-matrix-text">IT'S A PIECE OF CAKE!</span>
                 </div>
                 <div class="screen-content">
+                    <div class="lang-switch-container" data-current-lang="ja">
+                        <label class="lang-switch">
+                            <input type="checkbox" id="lang-toggle">
+                            <span class="slider"></span>
+                            <span class="lang-text jp">JP</span>
+                            <span class="lang-text en">EN</span>
+                        </label>
+                    </div>
                     <div class="profile-content">
                         <h1 class="profile-title">- HISTORY -</h1>
                         <p>＜出身高校＞</p>
@@ -36,20 +44,22 @@
 
         <div class="controls-area">
             <div class="d-pad">
-                <a href="history.html" class="d-pad-btn up" data-label="HISTORY"></a>
-                <a href="SNS.html" class="d-pad-btn down" data-label="SNS"></a>
-                <a href="hobby.html" class="d-pad-btn left" data-label="HOBBY"></a>
-                <a href="achievements.html" class="d-pad-btn right" data-label="ACHIEVEMENTS"></a>
+                <a href="#" data-lang-href="history" class="d-pad-btn up" data-label="HISTORY"></a>
+                <a href="#" data-lang-href="SNS" class="d-pad-btn down" data-label="SNS"></a>
+                <a href="#" data-lang-href="hobby" class="d-pad-btn left" data-label="HOBBY"></a>
+                <a href="#" data-lang-href="achievements" class="d-pad-btn right" data-label="ACHIEVEMENTS"></a>
                 <div class="d-pad-center"></div>
             </div>
 
             <div class="ab-buttons">
-                <a href="index.html" class="button b"><span>B</span></a>
-                <a href="index.html" class="button a"><span>A</span></a>
+                <a href="#" data-lang-href="index" class="button b"><span>B</span></a>
+                <a href="#" data-lang-href="index" class="button a"><span>A</span></a>
             </div>
         </div>
         
     </div>
+
+    <script src="script.js"></script>
 
 </body>
 </html>

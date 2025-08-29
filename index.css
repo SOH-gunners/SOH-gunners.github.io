@@ -149,7 +149,7 @@ body {
     width: 80px; height: 80px; background-color: #263f8a; border-radius: 50%;
     color: white; text-decoration: none; display: flex; justify-content: center; align-items: center;
     font-size: 30px; box-shadow: 3px 3px 5px rgba(0,0,0,0.4), inset -2px -2px 4px rgba(0,0,0,0.3);
-    border: 3px solid #9c2675; transition: all 0.1s;
+    border: 4px solid #9c2675; transition: all 0.1s;
     -webkit-tap-highlight-color: transparent; /* ← これを追加 */
     outline: none; /* ← これも追加推奨 */
 }
@@ -307,6 +307,83 @@ body {
     transition: transform 0.1s ease;
 }
 
+/* --- 言語切り替えスイッチ --- */
+.lang-switch-container {
+    display: flex;
+    justify-content: flex-end; /* 右寄せにする */
+    margin-bottom: 10px; /* 下のコンテンツとの余白 */
+    padding-right: 5px; /* 右側の微調整 */
+}
+
+.lang-switch {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 34px;
+}
+
+/* チェックボックス本体を隠す */
+.lang-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* スライダーの見た目 */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0f380f; /* ゲームボーイの文字色 */
+    border: 2px solid #0f380f;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+/* スライダーの横長の部分 */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 38px; /* ← 幅を広くする */
+    left: 2px;   /* ← 左の位置を調整 */
+    bottom: 2px;
+    background-color: #acb586; /* ゲームボーイの画面背景色 */
+    transition: .4s;
+    border-radius: 20px; /* ← 角を丸めた長方形に */
+}
+
+/* チェックされたとき（EN選択時）のスタイル */
+input:checked + .slider:before {
+    transform: translateX(35px); /* ← 移動距離を調整 */
+}
+
+input:checked + .slider:before {
+    transform: translateX(35px);
+}
+
+/* テキストのスタイル */
+.lang-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 14px;
+    color: #acb586;
+    pointer-events: none; /* テキストをクリックできないようにする */
+}
+
+.lang-text.jp {
+    left: 10px;
+}
+
+.lang-text.en {
+    right: 9px;
+}
+
 
 /* --- レスポンシブ対応 --- */
 @media (max-width: 620px) {
@@ -455,5 +532,31 @@ body {
     }
     .d-pad-btn[data-label="ACHIEVEMENTS"]::after {
         font-size: 1.8vw;
+    }
+
+    .lang-switch-container {
+        margin-bottom: 2vw;
+    }
+    .lang-switch {
+        width: 70px; /* 全体の幅を少し小さく */
+        height: 30px; /* 全体の高さを少し小さく */
+    }
+    .slider:before {
+        height: 22px; /* ハンドルの高さを小さく */
+        width: 32px;  /* ハンドルの幅を小さく */
+        left: 2px;
+        bottom: 2px;
+    }
+    input:checked + .slider:before {
+        transform: translateX(30px); /* スマホでの移動距離 */
+    }
+    .lang-text {
+        font-size: 10px; /* テキストを少し小さく */
+    }
+    .lang-text.jp {
+        left: 10px;
+    }
+    .lang-text.en {
+        right: 10px;
     }
 }
